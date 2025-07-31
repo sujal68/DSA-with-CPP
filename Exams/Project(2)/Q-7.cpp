@@ -3,7 +3,7 @@ using namespace std;
 
 main()
 {
-    int n, first, last;
+    int n, last;
     cout << "Enter Any Number : ";
     cin >> n;
 
@@ -12,6 +12,5 @@ main()
     {
         n /= 10;
     }
-    first = n;
-    cout << "The Sum Of First And Last Digit :" << (first + last);
+    cout << "The Sum Of First And Last Digit :" << (n + last);
 }
