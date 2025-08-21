@@ -53,7 +53,7 @@ int main()
         switch (number)
         {
             // this case is addition
-        case '1':
+        case 1:
 
             cout << "Enter any one numbers: ";
             cin >> no1;
@@ -62,7 +62,7 @@ int main()
             cout << "Calculate = " << add(no1, no2) << endl;
             break;
 
-        case '2':
+        case 2:
             // this case is substraction
             cout << "Enter any one numbers: ";
             cin >> no1;
@@ -70,7 +70,7 @@ int main()
             cin >> no2;
             cout << "Calculate = " << sub(no1, no2) << endl;
             break;
-        case '3':
+        case 3:
             // thix case is multipications
             cout << "Enter any one numbers: ";
             cin >> no1;
@@ -79,7 +79,7 @@ int main()
             cin >> no2;
             cout << "Calculate = " << mul(no1, no2) << endl;
             break;
-        case '4':
+        case 4:
             // this case is modules
             cout << "Enter any one numbers: ";
             cin >> no1;
@@ -92,7 +92,7 @@ int main()
                 cout << "calculate = " << divis(no1, no2)
                      << endl;
             break;
-        case '5':
+        case 5:
             // this cese is division
             cout << "Enter any one numbers: ";
             cin >> no1;
@@ -105,7 +105,7 @@ int main()
                 cout << "Result = " << mod(no1, no2)
                      << endl;
             break;
-        case '0':
+        case 0:
             // exit case
             cout << endl
                  << "You Are exited In Calculatore.." << endl;
