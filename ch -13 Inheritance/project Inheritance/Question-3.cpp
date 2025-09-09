@@ -56,14 +56,6 @@ public:
         cin.getline(address, 50);
     }
 
-    // getter
-    void getEmployeeData()
-    {
-        cout << endl
-             << "Your Name : " << name;
-        cout << "Your Role : " << role;
-        cout << "Your salary : " << salary;
-    }
 };
 
 class Field4 : public Field3
