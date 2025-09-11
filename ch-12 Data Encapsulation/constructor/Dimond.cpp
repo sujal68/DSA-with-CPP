@@ -19,7 +19,6 @@ public:
     {
         this->comp_id = comp_id;
         this->comp_name = comp_name;
-        // this->comp_ceo = comp_ceo;
         this->comp_revenue = comp_revenue;
         this->comp_import_raw_diamonds = comp_import_raw_diamonds;
         this->comp_staff_quantity = comp_staff_quantity;

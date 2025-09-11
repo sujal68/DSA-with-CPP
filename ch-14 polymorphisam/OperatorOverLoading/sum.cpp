@@ -19,6 +19,7 @@ public:
              << "Your Number Is : " << num << endl;
     }
 
+    // binary
     // ABC operator+(ABC obj)
     // {
     //     ABC tmp;
@@ -26,6 +27,7 @@ public:
     //     return tmp;
     // }
 
+    // unary
     ABC operator++(int)
     {
         ABC tmp;

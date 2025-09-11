@@ -45,24 +45,24 @@ class RailwaySystem : public Railway
 public:
     void searchTrain(int no)
     {
-        // if (trainNo == no)
-        // {
-        //     cout << endl
-        //          << "Train Found Successfully...." << endl;
-        //     getRailwayData();
-        // }
-        // else
-        // {
-        //     cout << endl
-        //          << "Train Not Found...." << endl;
-        // }
+        if (trainNo == no)
+        {
+            cout << endl
+                 << "Train Found Successfully...." << endl;
+            getRailwayData();
+        }
+        else
+        {
+            cout << endl
+                 << "Train Not Found...." << endl;
+        }
 
         switch (no)
         {
         case 1:
-            
+
             break;
-        
+
         default:
             break;
         }
