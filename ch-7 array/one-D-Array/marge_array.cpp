@@ -29,6 +29,7 @@ main()
         cout << "Enter Any Number of array-2 : " << "[" << i << "] : ";
         cin >> array2[i];
     }
+    // Array marge
     for (int i = 0; i < size; i++)
     {
         marge[i] = array[i];
