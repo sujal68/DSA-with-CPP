@@ -1,0 +1,3438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is OOPs - Interview Answer</title>
+    
+    <style>
+        body {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 40px;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* .container {
+            max-width: 800px;
+            background: #fff;
+            margin: auto;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        } */
+
+        h1 {
+            color: #4b5320;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 20px;
+            border-left: 4px solid #a2a486;
+            padding-left: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+        .example-box {
+            background: #fafafa;
+            border-left: 4px solid #4b5320;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .example-box strong {
+            color: #2f3325;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><strong> 1 </strong> Interview Question: What is OOPs?</h1>
+
+        <h2>Answer:</h2>
+        <p>
+            Sir, OOPs ka full form <strong>Object Oriented Programming System</strong> hai.
+            Basically, ye ek <strong>well-organized</strong> aur <strong>structured way of programming</strong> hai
+            jahan hum apne code ko real-world ke concept ke base pe likhte hain — using <strong>objects</strong> and
+            <strong>classes</strong>.
+        </p>
+
+        <p>
+            Is approach ka main focus hota hai code ko <strong>reusable</strong>, <strong>maintainable</strong>
+            aur <strong>secure</strong> banana. Objects ke through hum <strong>data</strong> aur
+            <strong>behavior</strong>
+            dono ko ek saath rakhte hain, jisse program ka structure clear aur easy to manage ho jata hai.
+        </p>
+
+        <p>
+            Aur OOPs ke main pillars — <strong>Encapsulation, Inheritance, Polymorphism</strong> aur
+            <strong>Abstraction</strong> —
+            ye sab milke code ko flexible aur safe banate hain.
+            Overall, OOPs ek aisa system hai jisse program ka structure strong hota hai
+            aur development process professional level pe maintain hoti hai.
+        </p>
+
+        <div class="example-box">
+            <h2>🔹 Real Life Example:</h2>
+            <p>
+                Sochhiye ek <strong>Car</strong> object. Har car ke kuch properties (data) hote hain jaise color, brand,
+                speed
+                aur kuch behaviors (functions) hote hain jaise start(), stop(), accelerate().
+                Ab agar hum ek aur car banana chahein jaise <em>SportsCar</em>, to wo basic Car class se
+                <strong>inherit</strong> kar sakti hai aur apne unique features add kar sakti hai jaise turboBoost().
+            </p>
+            <p>
+                Isi tarah se OOPs hume real-world objects ko logically code me represent karne ki facility deta hai.
+            </p>
+        </div>
+        <hr style="margin: 50px 0; border: none; border-top: 2px solid #a2a486;">
+
+        <h1><strong> 2 </strong> Interview Question: Explain the 4 Pillars of OOPs</h1>
+
+        <p>
+            Sir, OOPs ke 4 main pillars hote hain — <strong>Encapsulation, Inheritance, Polymorphism</strong>
+            aur <strong>Abstraction</strong>. Ye 4 principles ek saath milke code ko
+            <strong>organized, reusable, secure aur easy to maintain</strong> banate hain.
+        </p>
+
+        <!-- Encapsulation -->
+        <h2>1️⃣ Encapsulation</h2>
+        <p>
+            Encapsulation ka matlab hota hai data aur functions ko ek single unit ke andar pack karna — jaise class ke
+            andar.
+            Isse data direct access nahi hota, balki methods ke through hi interact kar sakte hain.
+            Ye concept <strong>data hiding</strong> aur <strong>security</strong> ke liye use hota hai.
+        </p>
+
+        <div class="example-box">
+            <strong>Real Life Example:</strong>
+            <p>
+                Jaise ek capsule ke andar alag-alag medicines hoti hain, par wo sab ek cover ke andar secure hoti hain.
+                Waise hi class ke andar variables aur methods encapsulated hote hain.
+                Example — BankAccount class ke andar balance private hota hai aur use access karne ke liye
+                deposit() aur withdraw() methods use karte hain.
+            </p>
+        </div>
+
+        <!-- Inheritance -->
+        <h2>2️⃣ Inheritance</h2>
+        <p>
+            Inheritance ka matlab hota hai ek class ke properties aur methods ko dusri class me reuse karna.
+            Ye concept reusability aur code maintenance ke liye important hai.
+        </p>
+
+        <div class="example-box">
+            <strong>Real Life Example:</strong>
+            <p>
+                For example, ek <strong>Parent class - Vehicle</strong> hai jisme properties hain like speed aur color.
+                Ab agar hum ek <strong>Child class - Car</strong> banayein to wo Vehicle ke features inherit kar sakti
+                hai
+                aur apne features jaise airCondition() add kar sakti hai.
+                Isse code reuse hota hai aur structure clean rehta hai.
+            </p>
+        </div>
+
+        <!-- Polymorphism -->
+        <h2>3️⃣ Polymorphism</h2>
+        <p>
+            Polymorphism ka matlab hota hai “many forms”.
+            Ek hi function ya method alag-alag behavior dikhata hai depending on the situation.
+            Ye concept mainly <strong>method overloading</strong> aur <strong>method overriding</strong> ke through use
+            hota hai.
+        </p>
+
+        <div class="example-box">
+            <strong>Real Life Example:</strong>
+            <p>
+                Jaise ek insan “speak()” karta hai — office me professional tone me,
+                ghar me casual tone me, aur doston ke sath friendly tone me.
+                Function same hai (speak), par behavior situation ke hisaab se change hota hai.
+                Yehi hota hai polymorphism in real life.
+            </p>
+        </div>
+
+        <!-- Abstraction -->
+        <h2>4️⃣ Abstraction</h2>
+        <p>
+            Abstraction ka matlab hota hai unnecessary details ko hide kar dena
+            aur sirf essential cheezein show karna.
+            Ye code ko simple, clean aur user-friendly banata hai.
+        </p>
+
+        <div class="example-box">
+            <strong>Real Life Example:</strong>
+            <p>
+                Jaise tu car chalata hai, to tujhe engine ke andar kya ho raha hai wo nahi pata hota.
+                Tu sirf steering, gear aur pedals use karta hai — baaki complexity hidden hoti hai.
+                Waise hi abstraction programming me user ko sirf required features dikhata hai,
+                implementation details hide karta hai.
+            </p>
+        </div>
+
+        <p style="margin-top: 25px;">
+            <strong>In short,</strong> ye 4 pillars milke OOPs ko ek complete aur professional programming model banate
+            hain
+            jisse code real-world jaise behave karta hai — simple, secure aur scalable.
+        </p>
+        <hr style="margin: 50px 0; border: none; border-top: 2px solid #a2a486;">
+
+        <h1><strong> 3 </strong> Interview Question: What is Object and Class in OOPs?</h1>
+
+        <p>
+            Sir, OOPs me <strong>Class</strong> aur <strong>Object</strong> sabse basic aur important concepts hote
+            hain.
+            In dono ke bina OOPs possible hi nahi hai.
+        </p>
+
+        <h2>🔸 Class</h2>
+        <p>
+            Class ek <strong>blueprint</strong> ya <strong>template</strong> hoti hai jisme hum define karte hain
+            ki ek particular object kaisa hoga — uske kya properties (data) aur methods (behavior) honge.
+            Matlab class ek logical structure hai, physical memory tabhi use hoti hai jab hum uska object banate hain.
+        </p>
+
+        <div class="example-box">
+            <strong>Real Life Example:</strong>
+            <p>
+                Jaise ek <strong>Car Design</strong> — wo class hai.
+                Us design me likha hoga ki car ke 4 wheels honge, ek engine hoga, color property hogi,
+                aur methods honge jaise start(), stop(), accelerate().
+                Ye sab sirf plan hai, actual car tab banti hai jab us design se object create hota hai.
+            </p>
+        </div>
+
+        <h2>🔹 Object</h2>
+        <p>
+            Object ek <strong>real-world entity</strong> hota hai jo class ka instance hota hai.
+            Matlab jab hum class ke base pe koi actual thing banate hain, wo object kehlata hai.
+            Object ke paas apne unique data values hoti hain, par behavior class se inherit hota hai.
+        </p>
+
+        <div class="example-box">
+            <strong>Real Life Example:</strong>
+            <p>
+                Agar <strong>Car</strong> ek class hai, to <em>BMW</em>, <em>Audi</em>, aur <em>Ferrari</em> uske
+                objects hain.
+                Sab ke paas same properties hain jaise wheels, engine, color —
+                par har object ke values alag ho sakte hain (e.g., BMW ka color white, Ferrari ka red).
+            </p>
+            <p>
+                Isi tarah agar <strong>Human</strong> ek class hai, to tu aur me dono uske objects hain —
+                same structure (hands, legs, brain) but alag data (name, habits, height, etc.).
+            </p>
+        </div>
+
+        <p style="margin-top: 25px;">
+            <strong>In short,</strong> Class ek design ya plan hota hai aur Object us plan ka real implementation.
+            Jaise building ka blueprint (class) aur actual building (object).
+        </p>
+        <hr style="margin: 50px 0; border: none; border-top: 2px solid #a2a486;">
+
+        <h1><strong> 4 </strong> Interview Question: What are Access Modifiers in OOPs?</h1>
+
+        <p>
+            Sir, <strong>Access Modifiers</strong> OOPs me wo keywords hote hain jo decide karte hain
+            ki kisi data member (variable) ya function (method) ko <strong>kitni accessibility</strong> milegi —
+            matlab wo class ke andar, bahar ya derived class me access ho sakta hai ya nahi.
+            Ye basically <strong>data security aur encapsulation</strong> maintain karne ke liye use hote hain.
+        </p>
+
+        <p>
+            Commonly 3 main access modifiers use hote hain:
+            <strong>Private, Protected,</strong> and <strong>Public</strong>.
+        </p>
+
+        <!-- Private -->
+        <h2>1️⃣ Private</h2>
+        <p>
+            <strong>Private</strong> members sirf usi class ke andar accessible hote hain.
+            Bahar se koi direct access nahi kar sakta.
+            Ye modifier data ko secure banata hai aur encapsulation implement karta hai.
+        </p>
+
+        <div class="example-box">
+            <strong>Real Life Example:</strong>
+            <p>
+                Jaise ek <strong>ATM Machine</strong> ke andar ka code aur balance details private hote hain —
+                user unhe directly access nahi kar sakta, sirf limited buttons aur screen ke through interact kar sakta
+                hai.
+                Waise hi private members class ke bahar se directly access nahi kiye ja sakte.
+            </p>
+        </div>
+
+        <!-- Protected -->
+        <h2>2️⃣ Protected</h2>
+        <p>
+            <strong>Protected</strong> members class ke andar aur uski derived (child) classes me accessible hote hain,
+            lekin class ke bahar directly access nahi kiye ja sakte.
+            Ye mainly <strong>Inheritance</strong> ke concept me kaam aata hai.
+        </p>
+
+        <div class="example-box">
+            <strong>Real Life Example:</strong>
+            <p>
+                Jaise ek family business — kuch information sirf family members ke liye hoti hai (protected),
+                outsider use directly nahi dekh sakta, par next generation (child class) ko milti hai.
+                Waise hi protected members bhi sirf inherited classes tak access hote hain.
+            </p>
+        </div>
+
+        <!-- Public -->
+        <h2>3️⃣ Public</h2>
+        <p>
+            <strong>Public</strong> members har jaga accessible hote hain — class ke andar, bahar, aur derived classes
+            me.
+            Ye sabse open level ka access modifier hai.
+        </p>
+
+        <div class="example-box">
+            <strong>Real Life Example:</strong>
+            <p>
+                Jaise ek <strong>Public Park</strong> — koi bhi aa sakta hai, koi restriction nahi.
+                Waise hi public members ko koi bhi class, function ya object access kar sakta hai bina restriction ke.
+            </p>
+        </div>
+
+        <h2>🔹 Summary Table</h2>
+        <table style="width:100%; border-collapse: collapse; margin-top: 15px;">
+            <thead>
+                <tr style="background-color: #a2a486; color: #fff;">
+                    <th style="padding: 10px; border: 1px solid #ccc;">Access Modifier</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Accessible Within Class</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Accessible in Derived Class</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Accessible Outside Class</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Private</td>
+                    <td style="text-align:center;">✔️</td>
+                    <td style="text-align:center;">❌</td>
+                    <td style="text-align:center;">❌</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Protected</td>
+                    <td style="text-align:center;">✔️</td>
+                    <td style="text-align:center;">✔️</td>
+                    <td style="text-align:center;">❌</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Public</td>
+                    <td style="text-align:center;">✔️</td>
+                    <td style="text-align:center;">✔️</td>
+                    <td style="text-align:center;">✔️</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="margin-top: 25px;">
+            <strong>In short,</strong> Access modifiers help in <strong>controlling visibility</strong> of data and
+            methods —
+            making the program <strong>secure, organized, and professional.</strong>
+        </p>
+
+        <hr style="margin: 50px 0; border: none; border-top: 2px solid #a2a486;">
+
+        <h1>💠 Question 5: What is <code>this</code> Keyword in OOPs?</h1>
+
+        <p>
+            Sir, <strong><code>this</code></strong> keyword ek <strong>reference variable</strong> hota hai
+            jo <strong>current object</strong> ko refer karta hai.
+            Matlab jab bhi koi method ya constructor execute hota hai,
+            to <code>this</code> us object ko represent karta hai jiske liye wo method call hua hai.
+        </p>
+
+        <p>
+            Simple words me bole to —
+            <strong>“this keyword is used to represent the current class’s instance variables.”</strong>
+            Ye mainly tab use hota hai jab method ke parameters ka naam aur class ke variables ka naam same hota hai.
+            Isse program clearly samajh pata hai ki kis variable ka reference lena hai (local ya instance).
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Code Example:</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+class Student {
+    int id;
+    String name;
+
+    Student(int id, String name) {
+        this.id = id;     // 'this' represents current class's instance variables
+        this.name = name;
+    }
+
+    void display() {
+        System.out.println("ID: " + this.id + ", Name: " + this.name);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student s1 = new Student(1, "Sujal");
+        Student s2 = new Student(2, "Rahul");
+        s1.display();
+        s2.display();
+    }
+}
+      </pre>
+        </div>
+
+        <div class="example-box">
+            <strong>🚗 Real Life Example:</strong>
+            <p>
+                Jaise ek <strong>Human</strong> class ka object “Sujal” hai.
+                Jab tu bolta hai “<em>This is Sujal</em>”, to tu khud ko refer kar raha hai —
+                wahi concept programming me bhi apply hota hai.
+                Jab ek object apne aap ke variable ya method ko refer karta hai,
+                to wo <code>this</code> keyword ka use karta hai.
+            </p>
+        </div>
+
+        <p style="margin-top: 25px;">
+            <strong>In short,</strong> <code>this</code> keyword is used to
+            <strong>refer current class’s instance variables</strong>
+            and helps in <strong>resolving variable name conflicts</strong>.
+            It makes the code clean, readable, and professional.
+        </p>
+        <hr style="margin: 50px 0; border: none; border-top: 2px solid #a2a486;">
+
+        <h1>💠 Question 6: What is Array of Objects in OOPs?</h1>
+
+        <p>
+            Sir, <strong>Array of Objects</strong> ka matlab hota hai ek hi type ke multiple objects ko
+            ek hi array ke andar store karna.
+            Jaise hum primitive data types (int, float, etc.) ka array bana sakte hain,
+            waise hi hum ek class ke multiple objects ka bhi array bana sakte hain.
+        </p>
+
+        <p>
+            Ye tab kaam aata hai jab hume same type ke objects handle karne ho —
+            jaise multiple students, employees, cars, etc.
+            Isse memory management easy hota hai aur code simple aur organized lagta hai.
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Code Example (Java):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+class Student {
+    int id;
+    String name;
+
+    void setData(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    void display() {
+        System.out.println("ID: " + id + ", Name: " + name);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Creating an array of Student objects
+        Student[] students = new Student[3];
+
+        // Initializing each object
+        for (int i = 0; i < 3; i++) {
+            students[i] = new Student();
+        }
+
+        // Setting data
+        students[0].setData(1, "Sujal");
+        students[1].setData(2, "Rahul");
+        students[2].setData(3, "Neha");
+
+        // Displaying data
+        for (int i = 0; i < 3; i++) {
+            students[i].display();
+        }
+    }
+}
+      </pre>
+        </div>
+
+        <div class="example-box">
+            <strong>🚗 Real Life Example:</strong>
+            <p>
+                Sochh ek <strong>Car</strong> class hai — har car ka apna color, model aur speed hai.
+                Agar tere paas 5 alag cars hain, to har ek car ke liye alag object banana tedious hoga.
+                Is situation me hum ek <strong>array of Car objects</strong> bana lete hain,
+                jisse hum easily sab cars ka data ek hi structure me manage kar sakte hain.
+            </p>
+            <p>
+                Jaise:
+                <br>
+                <code>Car cars[5];</code> → 5 Car objects ek array me store ho gaye — simple, clean, aur organized.
+            </p>
+        </div>
+
+        <p style="margin-top: 25px;">
+            <strong>In short,</strong> Array of Objects ek collection hota hai
+            <strong>same class ke multiple objects</strong> ka,
+            jisse hum real-world entities ko ek structured aur efficient way me manage kar sakte hain.
+        </p>
+        <hr style="margin: 50px 0; border: none; border-top: 2px solid #a2a486;">
+
+        <h1>💠 Question 7: What is <code>static</code> Keyword in OOPs?</h1>
+
+        <p>
+            Sir, static keyword ka matlab hota hai ek aisa variable ya method jo class ke level pe belong karta hai,
+            object ke level pe nahi.
+            Agar koi value sab objects ke liye same ho — jaise college name ya company name — to use static bana dete
+            hain taaki memory bar-bar allocate na ho.
+            Static variable ek hi baar memory me banta hai aur sab objects usse share karte hain.
+        </p>
+
+        <p>
+            Normally, har object ke paas apni copy hoti hai variables ki,
+            lekin static variable ek hi hota hai jo sab objects ke beech share hota hai.
+            Ye memory ko efficiently use karne me help karta hai aur data consistency maintain karta hai.
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Code Example (Java):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+class Student {
+    int id;
+    String name;
+    static String college = "Vidhyadeep University";  // static variable shared by all
+
+    Student(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    void display() {
+        System.out.println(id + " " + name + " " + college);
+    }
+
+    static void changeCollege(String newCollege) {   // static method
+        college = newCollege;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student s1 = new Student(1, "Sujal");
+        Student s2 = new Student(2, "Rahul");
+
+        s1.display();
+        s2.display();
+
+        // changing college name using static method
+        Student.changeCollege("IIT Surat");
+
+        s1.display();
+        s2.display();
+    }
+}
+      </pre>
+        </div>
+
+        <div class="example-box">
+            <strong>🏫 Real Life Example:</strong>
+            <p>
+                Sochh ek <strong>college</strong> me 100 students hain.
+                Har student ka roll number aur name alag hai (non-static),
+                lekin sabka college name same hai (static).
+                To us college name ke liye alag-alag 100 copies banane ka koi sense nahi —
+                ek hi shared variable se sabka kaam ho jaata hai.
+                Yehi concept static keyword implement karta hai.
+            </p>
+        </div>
+
+        <p style="margin-top: 25px;">
+            <strong>In short,</strong> <code>static</code> keyword use hota hai
+            <strong>class-level members</strong> define karne ke liye,
+            jo sab objects ke liye common hote hain.
+            It helps in <strong>memory optimization</strong> and keeps data consistent across all objects.
+        </p>
+        <hr style="margin: 50px 0; border: none; border-top: 2px solid #a2a486;">
+
+        <h1>💠 Question 8: What is <code>inline</code> Keyword in OOPs?</h1>
+
+        <p>
+            Sir, <strong><code>inline</code></strong> keyword mainly <strong>C++</strong> language me use hota hai.
+            Ye ek aisa feature hai jisse hum compiler ko suggest karte hain ki
+            function ka code <strong>directly us jagah pe insert kar do</strong> jahan function call hua hai —
+            instead of jumping to the function definition.
+        </p>
+
+        <p>
+            Normally, jab hum koi function call karte hain, to control us function ke address pe chala jata hai,
+            fir wapas return hota hai — ye process thoda time leta hai.
+            <strong>Inline function</strong> use karne se ye function call overhead remove ho jata hai,
+            aur program thoda fast execute hota hai (especially small functions me).
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Code Example (C++):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+#include &lt;iostream&gt;
+using namespace std;
+
+inline int square(int x) {
+    return x * x;
+}
+
+int main() {
+    cout << "Square of 5 is: " << square(5);
+    return 0;
+}
+      </pre>
+        </div>
+
+        <div class="example-box">
+            <strong>🧠 Explanation:</strong>
+            <p>
+                Jab compiler <code>square(5)</code> dekhta hai, to wo function ke andar jump nahi karta.
+                Balki directly code replace kar deta hai:
+                <code>cout &lt;&lt; "Square of 5 is: " &lt;&lt; (5 * 5);</code>
+                Isse execution fast ho jata hai kyunki function call overhead khatam ho gaya.
+            </p>
+        </div>
+
+        <div class="example-box">
+            <strong>🚗 Real Life Example:</strong>
+            <p>
+                Sochh tu har baar calculator kholke “2 + 3” likh raha hai — time lagta hai.
+                Agar tu ek shortcut bana le jahan pe sirf key press karte hi answer mil jaaye,
+                to process fast ho jaata hai.
+                Waisa hi <code>inline</code> function karta hai — function call ke shortcut version ke jaisa.
+            </p>
+        </div>
+
+        <h2>⚠️ Note:</h2>
+        <ul>
+            <li><code>inline</code> kewal <strong>small functions</strong> ke liye effective hota hai.</li>
+            <li>Large functions me use karne se program size increase ho sakta hai.</li>
+            <li>Compiler hamisha <code>inline</code> request accept nahi karta — ye sirf ek suggestion hoti hai.</li>
+        </ul>
+
+        <p style="margin-top: 25px;">
+            <strong>In short,</strong> <code>inline</code> keyword function call overhead ko reduce karta hai
+            by replacing function calls with actual code,
+            making the execution faster for small and frequently used functions.
+        </p>
+        <hr style="margin: 50px 0; border: none; border-top: 2px solid #a2a486;">
+
+        <h1>💠 Question 9: What is a <code>Constructor</code> in OOPs? Explain its Types.</h1>
+
+        <p>
+            Sir, <strong>Constructor</strong> ek <strong>special member function</strong> hota hai
+            jo class ke andar define kiya jata hai aur jab bhi hum class ka object banate hain,
+            wo <strong>automatically call</strong> ho jata hai.
+            Iska main purpose hota hai object ke <strong>data members ko initialize</strong> karna.
+        </p>
+
+        <p>
+            Constructor ka naam hamesha <strong>class ke naam ke same</strong> hota hai
+            aur iska koi <strong>return type</strong> nahi hota — not even void.
+            Jab object banta hai, constructor apne aap execute hota hai bina manually call kiye.
+        </p>
+
+        <div class="example-box">
+            <strong>💡 Real World Example:</strong>
+            <p>
+                Jaise car ka ignition system — jaise hi tu car start karta hai, engine automatically initialize ho jaata
+                hai.
+                Waise hi jab class ka object banta hai, constructor apne aap run hota hai aur data set kar deta hai.
+            </p>
+        </div>
+
+        <h2>🔹 There are 3 main types of Constructors in OOPs:</h2>
+
+        <h3>1️⃣ Default Constructor</h3>
+        <p>
+            Ye constructor tab use hota hai jab koi argument pass nahi karte.
+            Ye automatically class me present hota hai agar hum khud se constructor define nahi karte.
+            Iska kaam hota hai variables ko <strong>default values</strong> assign karna.
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Example (C++):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+#include &lt;iostream&gt;
+using namespace std;
+
+class Student {
+    int id;
+    string name;
+
+public:
+    // Default Constructor
+    Student() {
+        id = 0;
+        name = "Unknown";
+        cout << "Default Constructor called!" << endl;
+    }
+
+    void display() {
+        cout << id << " " << name << endl;
+    }
+};
+
+int main() {
+    Student s1;  // Default constructor called automatically
+    s1.display();
+    return 0;
+}
+      </pre>
+        </div>
+
+        <h3>2️⃣ Parameterized Constructor</h3>
+        <p>
+            Ye constructor tab use hota hai jab hum object ko banate time specific values dena chahte hain.
+            Isme parameters hote hain jinke through hum data members ko directly initialize kar dete hain.
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Example (C++):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+#include &lt;iostream&gt;
+using namespace std;
+
+class Car {
+    string brand;
+    int speed;
+
+public:
+    // Parameterized Constructor
+    Car(string b, int s) {
+        brand = b;
+        speed = s;
+        cout << "Parameterized Constructor called!" << endl;
+    }
+
+    void display() {
+        cout << "Brand: " << brand << ", Speed: " << speed << " km/h" << endl;
+    }
+};
+
+int main() {
+    Car c1("BMW", 220);
+    Car c2("Audi", 240);
+    c1.display();
+    c2.display();
+    return 0;
+}
+      </pre>
+        </div>
+
+        <h3>3️⃣ Copy Constructor</h3>
+        <p>
+            Copy Constructor ek <strong>existing object</strong> ki values ko use karke ek <strong>naya object</strong>
+            banata hai.
+            Matlab ye ek object ki copy create karta hai.
+            Agar hum khud nahi likhte, to compiler automatically ek default copy constructor provide karta hai.
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Example (C++):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+#include &lt;iostream&gt;
+using namespace std;
+
+class Person {
+    string name;
+    int age;
+
+public:
+    Person(string n, int a) {
+        name = n;
+        age = a;
+    }
+
+    // Copy Constructor
+    Person(const Person &obj) {
+        name = obj.name;
+        age = obj.age;
+        cout << "Copy Constructor called!" << endl;
+    }
+
+    void show() {
+        cout << name << " - " << age << endl;
+    }
+};
+
+int main() {
+    Person p1("Sujal", 21);
+    Person p2 = p1;  // Copy constructor called here
+    p1.show();
+    p2.show();
+    return 0;
+}
+      </pre>
+        </div>
+
+        <p style="margin-top: 25px;">
+            <strong>In short,</strong> Constructor ek special function hai jo object creation ke time automatically call
+            hota hai.
+            Iske 3 types hote hain — <strong>Default, Parameterized,</strong> aur <strong>Copy Constructor</strong>.
+            Ye object ke data members ko initialize karne aur memory ke sahi use me help karta hai. ⚙️
+        </p>
+        <hr style="margin: 50px 0; border: none; border-top: 2px solid #a2a486;">
+
+        <h1>💠 Question 10: What is <code>Method Overloading</code> and <code>Method Overriding</code> in OOPs?</h1>
+
+        <p>
+            Sir, dono concepts <strong>Polymorphism</strong> se related hain —
+            but inka use aur purpose alag hota hai.
+            <strong>Method Overloading</strong> compile-time polymorphism ka part hai,
+            jabki <strong>Method Overriding</strong> runtime polymorphism ka part hai.
+        </p>
+
+        <h2>1️⃣ Method Overloading (Compile-Time Polymorphism)</h2>
+        <p>
+            Method Overloading ka matlab hota hai ek hi class me <strong>same method name</strong>
+            use karna lekin <strong>different parameters</strong> ke saath.
+            Compiler decide karta hai ki kaunsa method call hoga based on arguments.
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Example (C++):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+#include &lt;iostream&gt;
+using namespace std;
+
+class Math {
+public:
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    float add(float a, float b) {
+        return a + b;
+    }
+
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
+};
+
+int main() {
+    Math m;
+    cout << m.add(5, 10) << endl;
+    cout << m.add(5.5f, 2.5f) << endl;
+    cout << m.add(1, 2, 3) << endl;
+    return 0;
+}
+      </pre>
+        </div>
+
+        <div class="example-box">
+            <strong>🚗 Real Life Example:</strong>
+            <p>
+                Sochh tu “call()” function use kar raha hai phone me —
+                tu kisi ko number se bhi call kar sakta hai, contact name se bhi, aur shortcut se bhi.
+                Function ka naam same hai, par input (parameters) alag hain.
+                Wahi hota hai <strong>Method Overloading</strong>.
+            </p>
+        </div>
+
+        <h2>2️⃣ Method Overriding (Runtime Polymorphism)</h2>
+        <p>
+            Method Overriding tab hota hai jab <strong>child class</strong>
+            apni <strong>parent class ke method ko same name aur parameters</strong> ke saath
+            dobara define karti hai.
+            Matlab base class ka method overwrite ho jaata hai aur
+            jab object child class ka hota hai, to child ka version call hota hai.
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Example (C++):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+#include &lt;iostream&gt;
+using namespace std;
+
+class Animal {
+public:
+    void sound() {
+        cout << "Animal makes a sound" << endl;
+    }
+};
+
+class Dog : public Animal {
+public:
+    void sound() {
+        cout << "Dog barks" << endl;
+    }
+};
+
+int main() {
+    Dog d;
+    d.sound();   // Child class method overrides parent method
+    return 0;
+}
+      </pre>
+        </div>
+
+        <div class="example-box">
+            <strong>🐶 Real Life Example:</strong>
+            <p>
+                Sochh ek parent class “Animal” hai jisme <code>sound()</code> method hai.
+                Ab har animal ka apna alag sound hota hai —
+                dog bark karta hai, cat meow karti hai.
+                To har child class apna version banati hai —
+                ye hi hota hai <strong>Method Overriding</strong>.
+            </p>
+        </div>
+
+        <h2>🧾 Difference Between Method Overloading and Overriding:</h2>
+        <table style="width:100%; border-collapse: collapse; margin-top: 15px;">
+            <thead>
+                <tr style="background-color: #a2a486; color: #fff;">
+                    <th style="padding: 10px; border: 1px solid #ccc;">Feature</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Method Overloading</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Method Overriding</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Type</td>
+                    <td style="text-align:center;">Compile-time polymorphism</td>
+                    <td style="text-align:center;">Runtime polymorphism</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Class Level</td>
+                    <td style="text-align:center;">Occurs within the same class</td>
+                    <td style="text-align:center;">Occurs between parent and child class</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Parameters</td>
+                    <td style="text-align:center;">Must be different</td>
+                    <td style="text-align:center;">Must be same</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Return Type</td>
+                    <td style="text-align:center;">Can be same or different</td>
+                    <td style="text-align:center;">Must be same</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Binding</td>
+                    <td style="text-align:center;">Early Binding</td>
+                    <td style="text-align:center;">Late Binding</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="margin-top: 25px;">
+            <strong>In short,</strong>
+            <strong>Method Overloading</strong> ek hi function name ke multiple versions banata hai (different
+            parameters ke saath),
+            jabki <strong>Method Overriding</strong> ek parent class ke function ko child class me redefine karta hai.
+            Dono ka goal same hai — <strong>code reusability aur flexibility.</strong>
+        </p>
+        <hr style="margin: 50px 0; border: none; border-top: 2px solid #a2a486;">
+
+        <h1>💠 Question 11: What is <code>Virtual Function</code> and <code>Pure Virtual Function</code> in OOPs?</h1>
+
+        <p>
+            Sir, <strong>Virtual Function</strong> aur <strong>Pure Virtual Function</strong> dono <strong>runtime
+                polymorphism</strong> ke concepts hain,
+            lekin dono ka use alag purpose ke liye hota hai.
+        </p>
+
+        <h2>1️⃣ Virtual Function</h2>
+        <p>
+            Virtual function ek <strong>base class ka function</strong> hota hai jise hum <strong>child class me
+                override</strong> kar sakte hain.
+            Jab hum base class ka pointer ya reference use karke child class ke object ko access karte hain,
+            to **runtime pe decide hota hai** kaunsa function call hoga (base ka ya child ka).
+            Isse kehte hain <strong>dynamic binding</strong>.
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Example (C++):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+#include &lt;iostream&gt;
+using namespace std;
+
+class Animal {
+public:
+    virtual void sound() {
+        cout << "Animal makes a sound" << endl;
+    }
+};
+
+class Dog : public Animal {
+public:
+    void sound() {
+        cout << "Dog barks" << endl;
+    }
+};
+
+int main() {
+    Animal *a;   // base class pointer
+    Dog d;
+    a = &d;
+    a->sound();   // Runtime polymorphism - Dog's sound() called
+    return 0;
+}
+      </pre>
+        </div>
+
+        <div class="example-box">
+            <strong>🐶 Real Life Example:</strong>
+            <p>
+                Sochh ek “Remote” (base class pointer) hai jisse tu TV, AC ya fan control kar sakta hai (child classes).
+                Ab remote ka button same hai, par result object ke type pe depend karega —
+                TV on karega, ya AC — ye runtime pe decide hota hai.
+                Yehi concept hota hai <strong>Virtual Function</strong>.
+            </p>
+        </div>
+
+        <h2>2️⃣ Pure Virtual Function</h2>
+        <p>
+            <strong>Pure Virtual Function</strong> ek aisa virtual function hota hai jiska base class me koi definition
+            nahi hota —
+            sirf <strong>declaration</strong> hoti hai.
+            Ye function child class me **must override** karna padta hai, warna error aata hai.
+            Jis class me pure virtual function hota hai, wo class <strong>abstract class</strong> kehlati hai.
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Example (C++):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+#include &lt;iostream&gt;
+using namespace std;
+
+class Shape {
+public:
+    virtual void draw() = 0;   // Pure Virtual Function
+};
+
+class Circle : public Shape {
+public:
+    void draw() {
+        cout << "Drawing Circle" << endl;
+    }
+};
+
+int main() {
+    Shape *s;
+    Circle c;
+    s = &c;
+    s->draw();   // Output: Drawing Circle
+    return 0;
+}
+      </pre>
+        </div>
+
+        <div class="example-box">
+            <strong>🎨 Real Life Example:</strong>
+            <p>
+                Sochh ek “Shape” class hai jisme sab shape ka common rule hai — “draw()” karna,
+                par har shape (circle, rectangle, triangle) ka draw karne ka tareeka alag hota hai.
+                To base class sirf rule define karti hai (pure virtual function),
+                aur har child class apna version likhti hai — yehi abstraction aur polymorphism ka combo hai.
+            </p>
+        </div>
+
+        <h2>🧾 Difference Between Virtual and Pure Virtual Function:</h2>
+        <table style="width:100%; border-collapse: collapse; margin-top: 15px;">
+            <thead>
+                <tr style="background-color: #a2a486; color: #fff;">
+                    <th style="padding: 10px; border: 1px solid #ccc;">Feature</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Virtual Function</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Pure Virtual Function</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Definition</td>
+                    <td style="text-align:center;">Has definition in base class</td>
+                    <td style="text-align:center;">Has no definition in base class (only declaration)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Overriding</td>
+                    <td style="text-align:center;">Can be overridden</td>
+                    <td style="text-align:center;">Must be overridden</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Class Type</td>
+                    <td style="text-align:center;">Normal class</td>
+                    <td style="text-align:center;">Abstract class</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Object Creation</td>
+                    <td style="text-align:center;">Object can be created</td>
+                    <td style="text-align:center;">Object cannot be created</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Use</td>
+                    <td style="text-align:center;">To achieve runtime polymorphism</td>
+                    <td style="text-align:center;">To achieve abstraction & enforce overriding</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="margin-top: 25px;">
+            <strong>In short,</strong>
+            <strong>Virtual Function</strong> ka matlab hota hai — “child class function ko runtime pe call karna”,
+            aur <strong>Pure Virtual Function</strong> ek rule set karta hai ke “child class apna version lazmi define
+            kare”.
+            Dono milke <strong>runtime polymorphism aur abstraction</strong> ka backbone banate hain.
+        </p>
+        <hr style="margin: 50px 0; border: none; border-top: 2px solid #a2a486;">
+
+        <h1>💠 Question 12: What is an <code>Abstract Class</code> in OOPs?</h1>
+
+        <p>
+            Sir, <strong>Abstract Class</strong> ek aisi class hoti hai jiska object directly <strong>create
+                nahi</strong> kiya ja sakta.
+            Ye mainly <strong>base class</strong> ke roop me kaam karti hai jahan hum sirf concept (structure ya rule)
+            define karte hain,
+            implementation nahi.
+            Is class me ek ya zyada <strong>pure virtual functions</strong> hote hain, jinhe derived (child) classes ko
+            <strong>must override</strong> karna padta hai.
+        </p>
+
+        <p>
+            Abstract class ek <strong>blueprint</strong> ki tarah hoti hai jisse hum dusri classes ko banate hain —
+            ye ensure karti hai ki har child class ek particular rule follow kare.
+            Matlab, abstract class base structure provide karti hai, aur child class uska real implementation karti hai.
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Example (C++):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+#include &lt;iostream&gt;
+using namespace std;
+
+// Abstract Class
+class Shape {
+public:
+    // Pure Virtual Function
+    virtual void draw() = 0;
+
+    void info() {
+        cout << "This is a shape class" << endl;
+    }
+};
+
+// Derived Class
+class Circle : public Shape {
+public:
+    void draw() {
+        cout << "Drawing a Circle" << endl;
+    }
+};
+
+// Another Derived Class
+class Rectangle : public Shape {
+public:
+    void draw() {
+        cout << "Drawing a Rectangle" << endl;
+    }
+};
+
+int main() {
+    // Shape s;  ❌ Error: cannot create object of abstract class
+    Shape *s;
+    Circle c;
+    Rectangle r;
+
+    s = &c;
+    s->draw();  // Calls Circle's draw()
+
+    s = &r;
+    s->draw();  // Calls Rectangle's draw()
+    return 0;
+}
+      </pre>
+        </div>
+
+        <div class="example-box">
+            <strong>🎨 Real Life Example:</strong>
+            <p>
+                Sochh ek “Shape” naam ka design rule hai jisme har shape ko draw() function rakhna mandatory hai,
+                par har shape (Circle, Rectangle, Triangle) ka drawing style alag hota hai.
+                To “Shape” sirf rule (structure) define karta hai — wo khud koi real shape nahi hota.
+                Waisa hi abstract class hai — wo <strong>idea define karti hai, object nahi banti.</strong>
+            </p>
+        </div>
+
+        <h2>🧾 Difference Between Normal Class and Abstract Class:</h2>
+        <table style="width:100%; border-collapse: collapse; margin-top: 15px;">
+            <thead>
+                <tr style="background-color: #a2a486; color: #fff;">
+                    <th style="padding: 10px; border: 1px solid #ccc;">Feature</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Normal Class</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Abstract Class</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Object Creation</td>
+                    <td style="text-align:center;">Can be created directly</td>
+                    <td style="text-align:center;">Cannot be created directly</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Contains Pure Virtual Function</td>
+                    <td style="text-align:center;">Not necessary</td>
+                    <td style="text-align:center;">At least one pure virtual function required</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Purpose</td>
+                    <td style="text-align:center;">Used to create real objects</td>
+                    <td style="text-align:center;">Used as a base class to define rules or structure</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Implementation</td>
+                    <td style="text-align:center;">Has complete implementation</td>
+                    <td style="text-align:center;">Partial implementation only</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Usage</td>
+                    <td style="text-align:center;">Used for creating reusable code</td>
+                    <td style="text-align:center;">Used to achieve abstraction & enforce method overriding</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="margin-top: 25px;">
+            <strong>In short,</strong>
+            Abstract class ek base structure hoti hai jisme <strong>rules define hote hain</strong> but full
+            implementation nahi hoti.
+            Iska object ban nahi sakta, aur ye <strong>abstraction aur polymorphism</strong> achieve karne ke liye use
+            hoti hai.
+            Derived classes uske pure virtual functions ko implement kar ke real behavior define karti hain.
+        </p>
+        <hr style="margin: 50px 0; border: none; border-top: 2px solid #a2a486;">
+
+        <h1>💠 Question 13: What is <code>Error</code> and <code>Exception</code> in OOPs?</h1>
+
+        <p>
+            Sir, programming me jab program normal flow ke hisaab se execute nahi hota
+            aur koi <strong>unexpected situation</strong> aati hai,
+            to use hum <strong>Error</strong> ya <strong>Exception</strong> kehte hain.
+            Dono program me issue create karte hain, lekin inka nature aur handle karne ka tareeka alag hota hai.
+        </p>
+
+        <h2>1️⃣ What is an Error?</h2>
+        <p>
+            <strong>Error</strong> ek serious problem hoti hai jo mostly
+            <strong>compile-time</strong> ya <strong>runtime environment</strong> me hoti hai
+            jisse program continue nahi kar sakta.
+            Errors generally developer ke control ke bahar hote hain —
+            jaise syntax mistake, memory full, hardware failure, etc.
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Example (C++):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int a = 10;
+    int b = 0;
+    cout << a / b;  // ❌ Runtime Error: Division by zero
+    return 0;
+}
+      </pre>
+        </div>
+
+        <div class="example-box">
+            <strong>⚠️ Real Life Example:</strong>
+            <p>
+                Sochh tu ek car chalata hai aur tyre puncture ho gaya —
+                ab car aage nahi badh sakti jab tak issue fix na ho.
+                Waisa hi error hai — jab program ekdam ruk jaata hai aur aage execute nahi hota.
+            </p>
+        </div>
+
+        <h2>2️⃣ What is an Exception?</h2>
+        <p>
+            <strong>Exception</strong> ek aisi condition hoti hai jo program ke execution ke dauran aati hai,
+            par use hum <strong>handle kar sakte hain</strong> without crashing the whole program.
+            Exception handling ka main goal hai program ko smoothly chalana even if kuch unexpected situation aaye.
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Example (C++):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int a = 10, b = 0;
+
+    try {
+        if (b == 0)
+            throw "Division by zero not allowed!";  // throw exception
+        cout << a / b;
+    }
+    catch (const char* msg) {
+        cout << "Error: " << msg << endl;  // handle exception
+    }
+
+    cout << "Program continues smoothly..." << endl;
+    return 0;
+}
+      </pre>
+        </div>
+
+        <div class="example-box">
+            <strong>🚗 Real Life Example:</strong>
+            <p>
+                Sochh tu car chala raha hai aur fuel khatam ho gaya —
+                tu turant <strong>reserve fuel</strong> pe switch kar leta hai, aur journey continue hoti hai.
+                Waisa hi <strong>exception handling</strong> hota hai —
+                problem aayi, handle ki aur program bina crash hue aage badh gaya.
+            </p>
+        </div>
+
+        <h2>🧾 Difference Between Error and Exception:</h2>
+        <table style="width:100%; border-collapse: collapse; margin-top: 15px;">
+            <thead>
+                <tr style="background-color: #a2a486; color: #fff;">
+                    <th style="padding: 10px; border: 1px solid #ccc;">Feature</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Error</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Exception</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Nature</td>
+                    <td style="text-align:center;">Serious issue (not recoverable)</td>
+                    <td style="text-align:center;">Recoverable problem</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">When occurs</td>
+                    <td style="text-align:center;">Compile-time or runtime</td>
+                    <td style="text-align:center;">Runtime only</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Handling</td>
+                    <td style="text-align:center;">Cannot be handled in code</td>
+                    <td style="text-align:center;">Can be handled using try-catch</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Example</td>
+                    <td style="text-align:center;">Out of memory, stack overflow</td>
+                    <td style="text-align:center;">Division by zero, file not found</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Program Continuation</td>
+                    <td style="text-align:center;">Program stops immediately</td>
+                    <td style="text-align:center;">Program continues after handling</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="margin-top: 25px;">
+            <strong>In short,</strong>
+            <strong>Error</strong> ek serious problem hoti hai jise fix karna programmer ke control me nahi hota,
+            jabki <strong>Exception</strong> ek unexpected condition hoti hai jise hum <strong>try-catch</strong> blocks
+            se handle kar sakte hain.
+            Isse program crash hone ke bajaye smoothly run karta hai. ✅
+        </p>
+        <hr style="margin: 50px 0; border: none; border-top: 2px solid #a2a486;">
+
+        <h1>💠 Question 14: What is <code>Static Memory Allocation</code> and
+            <code>Dynamic Memory Allocation (DMA)</code> in C++?
+        </h1>
+
+        <h2>🔹 Static Memory Allocation</h2>
+        <p>
+            Sir, <strong>Static Memory Allocation</strong> ka matlab hota hai memory ka allocation
+            <strong>compile-time pe fix</strong> ho jaana.
+            Matlab program ke chalne se pehle hi memory decide ho jaati hai, aur execution ke dauran change nahi hoti.
+            Static allocation me compiler automatically memory manage karta hai.
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Example:</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int arr[5];  // Static memory allocation (size fixed)
+    for (int i = 0; i < 5; i++)
+        arr[i] = i + 1;
+
+    for (int i = 0; i < 5; i++)
+        cout << arr[i] << " ";
+    return 0;
+}
+      </pre>
+            <p>
+                👉 Yahaan <code>arr[5]</code> ke liye memory compile-time pe fix ho gayi hai,
+                runtime pe badli nahi ja sakti.
+            </p>
+        </div>
+
+        <h2>🔹 Dynamic Memory Allocation (DMA)</h2>
+        <p>
+            <strong>Dynamic Memory Allocation</strong> ka matlab hota hai memory ko
+            <strong>runtime pe allocate karna</strong> ya free karna.
+            Matlab program ke chalne ke dauran hum jitni memory chahiye utni le sakte hain.
+            C++ me ye <code>new</code> aur <code>delete</code> operators se hota hai.
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Example (C++):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter number of elements: ";
+    cin >> n;
+
+    int *arr = new int[n];  // Dynamic allocation in heap memory
+
+    cout << "Enter " << n << " elements: ";
+    for (int i = 0; i < n; i++)
+        cin >> arr[i];
+
+    cout << "Elements are: ";
+    for (int i = 0; i < n; i++)
+        cout << arr[i] << " ";
+
+    delete[] arr;  // Free allocated memory
+    return 0;
+}
+      </pre>
+            <p>
+                👉 Yahaan memory <strong>runtime pe allocate</strong> hoti hai (heap segment me),
+                aur jab kaam khatam ho jaaye to <strong>delete[]</strong> se free kar dete hain.
+            </p>
+        </div>
+
+        <div class="example-box">
+            <strong>🧠 Real Life Example:</strong>
+            <p>
+                Sochh tu ek restaurant me gaya —
+                agar tu pehle hi fix kar le “mujhe 2 plates chahiye”, to wo static allocation hai 🍽️
+                par agar tu khana khate time bolta hai “bhai aur 1 plate laa”,
+                to wo <strong>dynamic allocation</strong> hai — runtime decision ke hisaab se memory lena.
+            </p>
+        </div>
+
+        <h2>🏗️ Memory Structure in C/C++ (4 Segments)</h2>
+        <p>
+            Jab program run hota hai, to memory 4 major segments me divide hoti hai:
+        </p>
+
+        <ul>
+            <li><strong>1️⃣ Code Segment (Text Segment):</strong>
+                Isme program ke executable instructions (compiled code) store hote hain.
+                Ye read-only hota hai — code runtime me change nahi hota.
+            </li>
+            <li><strong>2️⃣ Data Segment:</strong>
+                Isme <strong>global aur static variables</strong> store hote hain.
+                Ye 2 parts me divide hota hai:
+                <ul>
+                    <li><em>Initialized data</em> → jisme value assign hoti hai (e.g., int x = 5;)</li>
+                    <li><em>Uninitialized data (BSS)</em> → jisme value nahi hoti (e.g., static int x;)</li>
+                </ul>
+            </li>
+            <li><strong>3️⃣ Stack Segment:</strong>
+                Isme <strong>local variables</strong> aur <strong>function calls</strong> store hote hain.
+                Memory automatically allocate aur free hoti hai.
+                Static allocation mostly yahin hoti hai.
+            </li>
+            <li><strong>4️⃣ Heap Segment:</strong>
+                Ye wo area hai jahan se <strong>Dynamic Memory Allocation</strong> hoti hai.
+                Programmer khud memory allocate karta hai (<code>new</code>) aur free karta hai (<code>delete</code>).
+            </li>
+        </ul>
+
+        <div class="example-box">
+            <strong>🧩 Memory Layout Diagram (Conceptually):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px; line-height:1.6;">
+    ┌────────────────────┐
+    │     Code Segment   │  → program instructions
+    ├────────────────────┤
+    │     Data Segment   │  → global/static vars
+    ├────────────────────┤
+    │     Heap Segment   │  → dynamically allocated vars
+    │       ↑ grows up   │
+    ├────────────────────┤
+    │     Stack Segment  │  → local vars, function calls
+    │       ↓ grows down │
+    └────────────────────┘
+      </pre>
+        </div>
+
+        <p style="margin-top: 25px;">
+            <strong>In short,</strong>
+            <strong>Static Memory Allocation</strong> compile-time pe fix hoti hai (stack/data segment me),
+            jabki <strong>Dynamic Memory Allocation</strong> runtime pe hoti hai (heap segment me).
+            Dono ka balance program performance aur memory efficiency maintain karta hai 💡
+        </p>
+        <hr style="margin: 50px 0; border: none; border-top: 2px solid #a2a486;">
+
+        <h1>💠 Question 15: <code>Dynamic Memory Allocation (DMA)</code> in Procedural vs OOPs Programming</h1>
+
+        <p>
+            Sir, <strong>Dynamic Memory Allocation</strong> dono — <strong>Procedural Programming (C)</strong>
+            aur <strong>Object-Oriented Programming (C++)</strong> me hoti hai,
+            lekin dono me memory allocate karne aur free karne ka tareeka alag hota hai.
+        </p>
+
+        <h2>🔹 DMA in Procedural Programming (C Language)</h2>
+        <p>
+            C language me DMA ke liye 4 standard library functions use hote hain:
+            <strong><code>malloc()</code>, <code>calloc()</code>, <code>realloc()</code>,</strong> aur
+            <strong><code>free()</code>.</strong>
+            Ye functions <strong>&lt;stdlib.h&gt;</strong> header file me defined hote hain.
+        </p>
+
+        <ul>
+            <li><code>malloc()</code> → allocate single block of memory</li>
+            <li><code>calloc()</code> → allocate multiple blocks (and initialize to zero)</li>
+            <li><code>realloc()</code> → reallocate or resize existing memory</li>
+            <li><code>free()</code> → release allocated memory</li>
+        </ul>
+
+        <div class="example-box">
+            <strong>💻 Example (DMA in C):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main() {
+    int n, i;
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    // dynamically allocate memory
+    int *arr = (int*)malloc(n * sizeof(int));
+
+    if (arr == NULL) {
+        printf("Memory not allocated!\n");
+        return 1;
+    }
+
+    printf("Enter elements:\n");
+    for (i = 0; i < n; i++)
+        scanf("%d", &arr[i]);
+
+    printf("You entered: ");
+    for (i = 0; i < n; i++)
+        printf("%d ", arr[i]);
+
+    free(arr);  // release memory
+    return 0;
+}
+      </pre>
+            <p>👉 Yahaan hum <code>malloc()</code> aur <code>free()</code> se manually memory manage kar rahe hain.</p>
+        </div>
+
+        <div class="example-box">
+            <strong>🧠 Real Life Example:</strong>
+            <p>
+                Procedural DMA me tu khud waiter ban jaata hai — tu memory order karta hai, aur khud hi free bhi karta
+                hai.
+                Agar free karna bhool gaya, to memory leak ho jaata hai.
+            </p>
+        </div>
+
+        <h2>🔹 DMA in Object-Oriented Programming (C++)</h2>
+        <p>
+            C++ me same concept ko aur <strong>object-oriented</strong> way me implement kiya gaya hai —
+            yahaan memory allocate karne ke liye <strong><code>new</code></strong> operator
+            aur free karne ke liye <strong><code>delete</code></strong> operator use hota hai.
+            Ye zyada clean, safe aur automatic constructor/destructor ke saath kaam karta hai.
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Example (DMA in C++):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+#include &lt;iostream&gt;
+using namespace std;
+
+class Student {
+public:
+    string name;
+    int age;
+
+    Student(string n, int a) {
+        name = n;
+        age = a;
+    }
+
+    void display() {
+        cout << "Name: " << name << ", Age: " << age << endl;
+    }
+};
+
+int main() {
+    int n;
+    cout << "Enter number of students: ";
+    cin >> n;
+
+    // dynamically allocating array of objects
+    Student *ptr = new Student[n] { {"Sujal", 20}, {"Rahul", 21}, {"Neha", 19} };
+
+    cout << "Student details:\n";
+    for (int i = 0; i < 3; i++)
+        ptr[i].display();
+
+    delete[] ptr;  // free memory automatically via destructor
+    return 0;
+}
+      </pre>
+            <p>
+                👉 Yahaan <code>new</code> operator constructor ko call karta hai,
+                aur <code>delete</code> operator destructor ko automatically call karta hai.
+            </p>
+        </div>
+
+        <div class="example-box">
+            <strong>🚗 Real Life Example:</strong>
+            <p>
+                C++ me DMA bilkul hotel management system jaisa hai —
+                tu sirf guest (object) banata hai, aur system automatically uska room (memory) assign karta hai.
+                Jab guest checkout kare, destructor us room ko release kar deta hai.
+            </p>
+        </div>
+
+        <h2>🧾 Difference Between DMA in C (Procedural) and C++ (OOPs):</h2>
+        <table style="width:100%; border-collapse: collapse; margin-top: 15px;">
+            <thead>
+                <tr style="background-color: #a2a486; color: #fff;">
+                    <th style="padding: 10px; border: 1px solid #ccc;">Feature</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">DMA in C (Procedural)</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">DMA in C++ (OOPs)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Functions / Operators</td>
+                    <td style="text-align:center;">malloc(), calloc(), realloc(), free()</td>
+                    <td style="text-align:center;">new, delete</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Header File</td>
+                    <td style="text-align:center;">&lt;stdlib.h&gt;</td>
+                    <td style="text-align:center;">No header needed</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Syntax Complexity</td>
+                    <td style="text-align:center;">Complex (type casting required)</td>
+                    <td style="text-align:center;">Simple and readable</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Object Creation</td>
+                    <td style="text-align:center;">Cannot call constructor/destructor</td>
+                    <td style="text-align:center;">Automatically calls constructor/destructor</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Memory Type</td>
+                    <td style="text-align:center;">Heap (manual control)</td>
+                    <td style="text-align:center;">Heap (object-managed)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Error Handling</td>
+                    <td style="text-align:center;">Must check NULL manually</td>
+                    <td style="text-align:center;">Throws exception if memory not allocated</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="margin-top: 25px;">
+            <strong>In short,</strong>
+            Procedural DMA me programmer ko memory manage karni padti hai manually,
+            jabki OOPs DMA me <strong>new/delete</strong> ke through memory automatically handle hoti hai
+            with constructor & destructor support.
+            OOPs DMA is more <strong>safe, readable, and object-oriented. ✅</strong>
+        </p>
+        <hr style="margin: 50px 0; border: none; border-top: 2px solid #a2a486;">
+
+        <h1>💠 Question 16: What is a <code>Template</code> in C++?</h1>
+
+        <p>
+            Sir, <strong>Template</strong> ek powerful feature hai C++ ka
+            jo hume <strong>generic programming</strong> karne ki facility deta hai.
+            Matlab hum ek hi function ya class likh kar usse <strong>different data types</strong> ke saath use kar
+            sakte hain,
+            bina same code baar-baar likhe.
+            Templates ka main goal hai <strong>code reusability aur type-safety</strong>.
+        </p>
+
+        <p>
+            Template basically ek <strong>blueprint</strong> hota hai function ya class ke liye,
+            jisme data type ko as a <strong>parameter</strong> pass kiya jaata hai.
+        </p>
+
+        <h2>🔹 Types of Templates in C++</h2>
+        <ul>
+            <li><strong>Function Template</strong></li>
+            <li><strong>Class Template</strong></li>
+        </ul>
+
+        <h3>1️⃣ Function Template</h3>
+        <p>
+            Function Template ek generic function define karta hai jo multiple data types ke liye kaam karta hai.
+            Hum function ke definition me data type specify nahi karte — wo runtime pe compiler decide karta hai
+            based on argument type.
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Example (Function Template):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+#include &lt;iostream&gt;
+using namespace std;
+
+template &lt;typename T&gt;     // Template declaration
+T add(T a, T b) {         // Generic function
+    return a + b;
+}
+
+int main() {
+    cout << "Int: " << add(5, 10) << endl;
+    cout << "Float: " << add(5.5f, 2.3f) << endl;
+    cout << "Double: " << add(3.14, 2.86) << endl;
+    return 0;
+}
+      </pre>
+            <p>
+                👉 Yahaan <code>add()</code> function same code se int, float aur double sab pe kaam kar raha hai —
+                compiler automatically decide karta hai data type at compile-time.
+            </p>
+        </div>
+
+        <h3>2️⃣ Class Template</h3>
+        <p>
+            Class Template me hum ek generic class banate hain jo multiple data types handle kar sakti hai.
+            Isme class ke andar members aur methods sab generic hote hain.
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Example (Class Template):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+#include &lt;iostream&gt;
+using namespace std;
+
+template &lt;class T&gt;
+class Box {
+    T value;
+public:
+    Box(T v) {
+        value = v;
+    }
+
+    void show() {
+        cout << "Value: " << value << endl;
+    }
+};
+
+int main() {
+    Box&lt;int&gt; b1(100);
+    Box&lt;float&gt; b2(5.75);
+    Box&lt;string&gt; b3("Sujal");
+
+    b1.show();
+    b2.show();
+    b3.show();
+    return 0;
+}
+      </pre>
+            <p>
+                👉 Yahaan ek hi class <code>Box</code> alag-alag data types ke saath kaam kar rahi hai — int, float aur
+                string.
+            </p>
+        </div>
+
+        <div class="example-box">
+            <strong>🚗 Real Life Example:</strong>
+            <p>
+                Sochh tu ek “Lunch Box” factory chalata hai.
+                Tu ek hi design (template) rakhta hai — par usme koi bhi item (rice, pasta, salad) pack ho sakta hai.
+                Waise hi C++ me ek hi <strong>template</strong> multiple data types handle kar leta hai.
+            </p>
+        </div>
+
+        <h2>🧾 Difference Between Function and Class Template:</h2>
+        <table style="width:100%; border-collapse: collapse; margin-top: 15px;">
+            <thead>
+                <tr style="background-color: #a2a486; color: #fff;">
+                    <th style="padding: 10px; border: 1px solid #ccc;">Feature</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Function Template</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Class Template</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Definition</td>
+                    <td style="text-align:center;">Generic function for multiple data types</td>
+                    <td style="text-align:center;">Generic class for multiple data types</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Usage</td>
+                    <td style="text-align:center;">Used for performing operations</td>
+                    <td style="text-align:center;">Used for creating objects</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Syntax</td>
+                    <td style="text-align:center;">template &lt;typename T&gt; T func(T a, T b)</td>
+                    <td style="text-align:center;">template &lt;class T&gt; class ClassName { ... }</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Instantiation</td>
+                    <td style="text-align:center;">When function is called</td>
+                    <td style="text-align:center;">When object is created</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="margin-top: 25px;">
+            <strong>In short,</strong>
+            Template ek <strong>generic programming feature</strong> hai jo ek hi code ko multiple data types ke liye
+            reusable banata hai.
+            Iske 2 types hote hain — Function Template aur Class Template.
+            Ye C++ ka ek major advantage hai jo <strong>type safety, reusability aur efficiency</strong> provide karta
+            hai. 🚀
+        </p>
+        <hr style="margin: 50px 0; border: none; border-top: 2px solid #a2a486;">
+
+        <h1>💠 Question 17: What is a <code>Vector</code> in C++?</h1>
+
+        <p>
+            Sir, <strong>Vector</strong> ek part hai C++ ke <strong>STL (Standard Template Library)</strong> ka.
+            Ye basically ek <strong>dynamic array</strong> hota hai jo apni size ko automatically badha ya kam kar sakta
+            hai
+            as elements are added or removed.
+            Matlab ye <strong>array ki tarah</strong> behave karta hai, lekin zyada flexible aur safe hota hai.
+        </p>
+
+        <p>
+            Vectors internally **dynamic memory allocation (DMA)** use karte hain,
+            matlab jab bhi hum new element daalte hain aur memory full ho jaati hai,
+            to wo automatically nayi memory allocate kar ke purane elements ko copy kar deta hai.
+        </p>
+
+        <h2>🔹 Header File:</h2>
+        <p><code>#include &lt;vector&gt;</code></p>
+
+        <h2>🔹 Syntax:</h2>
+        <pre style="background:#f4f4f4; padding:10px; border-radius:8px;">vector&lt;data_type&gt; vector_name;</pre>
+
+        <h2>🔹 Commonly Used Vector Functions:</h2>
+        <ul>
+            <li><code>push_back()</code> → Add element at the end</li>
+            <li><code>pop_back()</code> → Remove last element</li>
+            <li><code>size()</code> → Returns current number of elements</li>
+            <li><code>capacity()</code> → Returns total allocated memory size</li>
+            <li><code>front()</code> / <code>back()</code> → First & last elements</li>
+            <li><code>clear()</code> → Removes all elements</li>
+        </ul>
+
+        <div class="example-box">
+            <strong>💻 Example (C++ Vector):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+int main() {
+    vector&lt;int&gt; numbers;
+
+    numbers.push_back(10);
+    numbers.push_back(20);
+    numbers.push_back(30);
+
+    cout << "Vector elements: ";
+    for (int i = 0; i < numbers.size(); i++) {
+        cout << numbers[i] << " ";
+    }
+
+    cout << "\nSize: " << numbers.size();
+    cout << "\nCapacity: " << numbers.capacity();
+
+    numbers.pop_back();
+
+    cout << "\nAfter pop_back(), elements: ";
+    for (int x : numbers)
+        cout << x << " ";
+    
+    return 0;
+}
+      </pre>
+        </div>
+
+        <div class="example-box">
+            <strong>🚗 Real Life Example:</strong>
+            <p>
+                Sochh ek “shopping cart” jisme tu items daalta hai 🛒
+                Agar cart full ho jaata hai, to automatically bada cart milta hai without losing old items.
+                Waise hi <strong>vector</strong> bhi apni size double karta hai jab jagah khatam ho jaati hai.
+            </p>
+        </div>
+
+        <h2>🧾 Difference Between Array and Vector:</h2>
+        <table style="width:100%; border-collapse: collapse; margin-top: 15px;">
+            <thead>
+                <tr style="background-color: #a2a486; color: #fff;">
+                    <th style="padding: 10px; border: 1px solid #ccc;">Feature</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Array</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Vector</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Memory Allocation</td>
+                    <td style="text-align:center;">Static (fixed size)</td>
+                    <td style="text-align:center;">Dynamic (auto resize)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Flexibility</td>
+                    <td style="text-align:center;">Size fixed at compile-time</td>
+                    <td style="text-align:center;">Can grow/shrink at runtime</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Memory Handling</td>
+                    <td style="text-align:center;">Manual</td>
+                    <td style="text-align:center;">Automatic (handled by STL)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Data Insertion/Deletion</td>
+                    <td style="text-align:center;">Difficult</td>
+                    <td style="text-align:center;">Easy (push_back, pop_back)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Performance</td>
+                    <td style="text-align:center;">Fast but limited</td>
+                    <td style="text-align:center;">Slight overhead but flexible</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="margin-top: 25px;">
+            <strong>In short,</strong>
+            <strong>Vector</strong> ek dynamic array hai jo automatic resizing aur easy memory management provide karta
+            hai.
+            Ye <strong>STL container</strong> ka sabse widely used part hai C++ me,
+            kyunki ye efficient aur safe dono hai. 🚀
+        </p>
+        <hr style="margin: 50px 0; border: none; border-top: 2px solid #a2a486;">
+
+        <h1>💠 Question 18: What is a <code>Linked List</code> in C++?</h1>
+
+        <p>
+            Sir, <strong>Linked List</strong> ek <strong>linear data structure</strong> hai jisme elements ko memory me
+            <strong>contiguous (ek saath)</strong> store nahi kiya jaata jaise array me hota hai.
+            Balki har element — jise <strong>Node</strong> kehte hain — apne next element ka address store karta hai.
+            Isse hum <strong>pointers</strong> ke through elements ko connect karte hain.
+        </p>
+
+        <p>
+            Har <strong>Node</strong> do parts me divided hota hai:
+        </p>
+        <ul>
+            <li><strong>Data:</strong> actual value store karta hai.</li>
+            <li><strong>Pointer (next):</strong> next node ka address store karta hai.</li>
+        </ul>
+
+        <div class="example-box">
+            <strong>🧩 Structure of a Node:</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px;">
+    ┌────────────┬───────────────┐
+    │   Data     │   Next (→)    │
+    └────────────┴───────────────┘
+      </pre>
+            <p>
+                👉 Is “next” pointer ke through saare nodes ek chain jaisi linked list banate hain.
+            </p>
+        </div>
+
+        <div class="example-box">
+            <strong>💻 Example (Singly Linked List):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+#include &lt;iostream&gt;
+using namespace std;
+
+class Node {
+public:
+    int data;
+    Node* next;
+
+    Node(int val) {
+        data = val;
+        next = NULL;
+    }
+};
+
+void printList(Node* head) {
+    Node* temp = head;
+    while (temp != NULL) {
+        cout << temp->data << " -> ";
+        temp = temp->next;
+    }
+    cout << "NULL" << endl;
+}
+
+int main() {
+    // Creating nodes dynamically
+    Node* head = new Node(10);
+    Node* second = new Node(20);
+    Node* third = new Node(30);
+
+    // Linking nodes
+    head->next = second;
+    second->next = third;
+
+    cout << "Linked List: ";
+    printList(head);
+
+    return 0;
+}
+      </pre>
+        </div>
+
+        <div class="example-box">
+            <strong>🧠 Real Life Example:</strong>
+            <p>
+                Sochh tu ek train ke coach ke andar baitha hai 🚆
+                Har coach (Node) me passengers (data) hain aur har coach apne next coach se connected hai (pointer).
+                Agar ek coach alag kar de to baki train continue chalti hai.
+                Waise hi linked list me har node ek dusre se connected hota hai pointer ke through.
+            </p>
+        </div>
+
+        <h2>🔹 Types of Linked List:</h2>
+        <ul>
+            <li><strong>1️⃣ Singly Linked List:</strong> Each node points to the next node (one direction only).</li>
+            <li><strong>2️⃣ Doubly Linked List:</strong> Each node has two pointers — one for next, one for previous.
+            </li>
+            <li><strong>3️⃣ Circular Linked List:</strong> Last node points back to the first node (forming a loop).
+            </li>
+        </ul>
+
+        <div class="example-box">
+            <strong>🧩 Diagram (Conceptual View):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px;">
+    Singly Linked List:
+    ┌────┐    ┌────┐    ┌────┐
+    │10 │ -> │20 │ -> │30 │ -> NULL
+    └────┘    └────┘    └────┘
+
+    Doubly Linked List:
+    NULL <- [10] <-> [20] <-> [30] -> NULL
+
+    Circular Linked List:
+    [10] -> [20] -> [30] ↺ (points back to head)
+      </pre>
+        </div>
+
+        <h2>🧾 Difference Between Array and Linked List:</h2>
+        <table style="width:100%; border-collapse: collapse; margin-top: 15px;">
+            <thead>
+                <tr style="background-color: #a2a486; color: #fff;">
+                    <th style="padding: 10px; border: 1px solid #ccc;">Feature</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Array</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Linked List</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Memory Allocation</td>
+                    <td style="text-align:center;">Contiguous (fixed size)</td>
+                    <td style="text-align:center;">Non-contiguous (dynamic size)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Insertion/Deletion</td>
+                    <td style="text-align:center;">Expensive (shifting needed)</td>
+                    <td style="text-align:center;">Fast (only pointer adjustment)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Access Time</td>
+                    <td style="text-align:center;">O(1) (Direct Indexing)</td>
+                    <td style="text-align:center;">O(n) (Sequential traversal)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Memory Usage</td>
+                    <td style="text-align:center;">Compact (no extra pointers)</td>
+                    <td style="text-align:center;">Extra pointer memory per node</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="margin-top: 25px;">
+            <strong>In short,</strong>
+            <strong>Linked List</strong> ek dynamic data structure hai jo memory ko efficiently use karta hai
+            by connecting nodes with pointers.
+            Ye <strong>array se flexible</strong> hai aur insertion/deletion operations ke liye best hota hai.
+            C++ me isse <strong>DMA + Pointers</strong> ke through implement kiya jaata hai. 🔗
+        </p>
+        <hr style="margin: 50px 0; border: none; border-top: 2px solid #a2a486;">
+
+        <h1>💠 Question 19: What is a <code>Stack</code> in Data Structure?</h1>
+
+        <p>
+            Sir, <strong>Stack</strong> ek <strong>linear data structure</strong> hai jo <strong>LIFO (Last In, First
+                Out)</strong> principle pe kaam karta hai.
+            Matlab jo element sabse <strong>last me insert</strong> hua hai, wo sabse <strong>pehle remove</strong> hota
+            hai.
+            Jaise hum plates ko ek ke upar ek rakhte hain — jo plate sabse upar hai wo sabse pehle nikalti hai.
+        </p>
+
+        <h2>🔹 Stack ke Main Operations:</h2>
+        <ul>
+            <li><strong>push(x):</strong> Add element on top of the stack.</li>
+            <li><strong>pop():</strong> Remove top element from the stack.</li>
+            <li><strong>top():</strong> Returns the top element without removing it.</li>
+            <li><strong>isEmpty():</strong> Checks whether the stack is empty.</li>
+            <li><strong>isFull():</strong> (in static implementation) Checks if stack is full.</li>
+        </ul>
+
+        <div class="example-box">
+            <strong>💻 Example (Stack using Array in C++):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+#include &lt;iostream&gt;
+using namespace std;
+
+#define MAX 5
+
+class Stack {
+    int arr[MAX];
+    int top;
+
+public:
+    Stack() {
+        top = -1;
+    }
+
+    void push(int x) {
+        if (top == MAX - 1) {
+            cout << "Stack Overflow!" << endl;
+        } else {
+            arr[++top] = x;
+            cout << x << " pushed to stack." << endl;
+        }
+    }
+
+    void pop() {
+        if (top == -1) {
+            cout << "Stack Underflow!" << endl;
+        } else {
+            cout << arr[top--] << " popped from stack." << endl;
+        }
+    }
+
+    int peek() {
+        if (top == -1) {
+            cout << "Stack is empty!" << endl;
+            return -1;
+        }
+        return arr[top];
+    }
+
+    bool isEmpty() {
+        return (top == -1);
+    }
+};
+
+int main() {
+    Stack s;
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    cout << "Top element: " << s.peek() << endl;
+    s.pop();
+    s.pop();
+    s.pop();
+    s.pop(); // underflow
+    return 0;
+}
+      </pre>
+        </div>
+
+        <div class="example-box">
+            <strong>🧠 Real Life Example:</strong>
+            <p>
+                Sochh tu kitchen me plates stack kar raha hai 🍽️
+                Tu plate rakhte ja raha hai ek ke upar ek —
+                jab nikalne ka time aaya, to tu sabse upar wali (last inserted) plate nikalta hai pehle.
+                Yehi hota hai <strong>LIFO principle</strong>.
+            </p>
+        </div>
+
+        <h2>🔹 Diagram (Conceptually):</h2>
+        <pre style="background:#f4f4f4; padding:10px; border-radius:8px; line-height:1.6;">
+    Initial Stack:   [Empty]
+    push(10)   →   [10]
+    push(20)   →   [10, 20]
+    push(30)   →   [10, 20, 30]  ← Top
+    pop()      →   [10, 20]
+    pop()      →   [10]
+    pop()      →   [Empty]
+    </pre>
+
+        <h2>🔹 Stack ke Implementation Types:</h2>
+        <ul>
+            <li><strong>1️⃣ Static Stack:</strong> Fixed size stack implemented using arrays.</li>
+            <li><strong>2️⃣ Dynamic Stack:</strong> Flexible size stack implemented using linked list (using DMA).</li>
+        </ul>
+
+        <h3>📘 Example (Stack using Linked List):</h3>
+        <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+#include &lt;iostream&gt;
+using namespace std;
+
+class Node {
+public:
+    int data;
+    Node* next;
+    Node(int val) {
+        data = val;
+        next = NULL;
+    }
+};
+
+class Stack {
+    Node* top;
+public:
+    Stack() {
+        top = NULL;
+    }
+
+    void push(int x) {
+        Node* newNode = new Node(x);
+        newNode->next = top;
+        top = newNode;
+        cout << x << " pushed to stack." << endl;
+    }
+
+    void pop() {
+        if (top == NULL) {
+            cout << "Stack Underflow!" << endl;
+            return;
+        }
+        cout << top->data << " popped." << endl;
+        Node* temp = top;
+        top = top->next;
+        delete temp;
+    }
+
+    int peek() {
+        if (top == NULL) {
+            cout << "Stack is empty!" << endl;
+            return -1;
+        }
+        return top->data;
+    }
+};
+
+int main() {
+    Stack s;
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    cout << "Top element: " << s.peek() << endl;
+    s.pop();
+    s.pop();
+    return 0;
+}
+    </pre>
+
+        <h2>🧾 Difference Between Stack and Queue:</h2>
+        <table style="width:100%; border-collapse: collapse; margin-top: 15px;">
+            <thead>
+                <tr style="background-color: #a2a486; color: #fff;">
+                    <th style="padding: 10px; border: 1px solid #ccc;">Feature</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Stack</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Queue</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Principle</td>
+                    <td style="text-align:center;">LIFO (Last In First Out)</td>
+                    <td style="text-align:center;">FIFO (First In First Out)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Insertion</td>
+                    <td style="text-align:center;">At the top</td>
+                    <td style="text-align:center;">At the rear</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Deletion</td>
+                    <td style="text-align:center;">From the top</td>
+                    <td style="text-align:center;">From the front</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Use Case</td>
+                    <td style="text-align:center;">Function calls, undo feature</td>
+                    <td style="text-align:center;">Printer queue, task scheduling</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="margin-top: 25px;">
+            <strong>In short,</strong>
+            <strong>Stack</strong> ek linear data structure hai jo <strong>LIFO principle</strong> pe kaam karta hai.
+            Ye memory management, recursion, function calls aur backtracking me bahut useful hota hai.
+            C++ me ise array ya linked list dono se implement kar sakte hain. ⚙️
+        </p>
+        <hr style="margin: 50px 0; border: none; border-top: 2px solid #a2a486;">
+
+        <h1>💠 Question 20: What is a <code>Queue</code> in Data Structure?</h1>
+
+        <p>
+            Sir, <strong>Queue</strong> ek <strong>linear data structure</strong> hai jo <strong>FIFO (First In, First
+                Out)</strong> principle follow karta hai.
+            Matlab jo element sabse <strong>pehle insert</strong> hota hai, wo sabse <strong>pehle remove</strong> hota
+            hai.
+            Ye bilkul real-life line (queue) jaisa hota hai jahan pehle aaya banda pehle service leke chala jaata hai.
+        </p>
+
+        <h2>🔹 Queue ke Main Operations:</h2>
+        <ul>
+            <li><strong>enqueue(x):</strong> Add element at the <strong>rear</strong> end of the queue.</li>
+            <li><strong>dequeue():</strong> Remove element from the <strong>front</strong> end.</li>
+            <li><strong>front():</strong> Returns front element.</li>
+            <li><strong>rear():</strong> Returns last element.</li>
+            <li><strong>isEmpty():</strong> Checks if queue is empty.</li>
+            <li><strong>isFull():</strong> Checks if queue is full (static array version).</li>
+        </ul>
+
+        <div class="example-box">
+            <strong>💻 Example (Queue using Array in C++):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+#include &lt;iostream&gt;
+using namespace std;
+
+#define SIZE 5
+
+class Queue {
+    int arr[SIZE];
+    int front, rear;
+
+public:
+    Queue() {
+        front = -1;
+        rear = -1;
+    }
+
+    void enqueue(int x) {
+        if (rear == SIZE - 1)
+            cout << "Queue Overflow!" << endl;
+        else {
+            if (front == -1) front = 0;
+            arr[++rear] = x;
+            cout << x << " enqueued to queue." << endl;
+        }
+    }
+
+    void dequeue() {
+        if (front == -1 || front > rear)
+            cout << "Queue Underflow!" << endl;
+        else
+            cout << arr[front++] << " dequeued from queue." << endl;
+    }
+
+    void display() {
+        if (front == -1)
+            cout << "Queue is empty!" << endl;
+        else {
+            cout << "Queue elements: ";
+            for (int i = front; i <= rear; i++)
+                cout << arr[i] << " ";
+            cout << endl;
+        }
+    }
+};
+
+int main() {
+    Queue q;
+    q.enqueue(10);
+    q.enqueue(20);
+    q.enqueue(30);
+    q.display();
+    q.dequeue();
+    q.display();
+    return 0;
+}
+      </pre>
+        </div>
+
+        <div class="example-box">
+            <strong>🧠 Real Life Example:</strong>
+            <p>
+                Sochh tu movie ticket lene gaya hai 🎟️
+                Line me pehle khada banda sabse pehle ticket leke nikalta hai —
+                jo last me aaya usko sabse last me chance milega.
+                Yehi hota hai <strong>Queue ka FIFO principle.</strong>
+            </p>
+        </div>
+
+        <h2>🔹 Queue Diagram:</h2>
+        <pre style="background:#f4f4f4; padding:10px; border-radius:8px;">
+    Front → [10][20][30] ← Rear
+    dequeue() → remove 10
+    New Queue: Front → [20][30]
+    </pre>
+
+        <h2>🔹 Types of Queue:</h2>
+        <ul>
+            <li><strong>1️⃣ Simple Queue:</strong> Normal FIFO structure (like above).</li>
+            <li><strong>2️⃣ Circular Queue:</strong> Last position connects back to the first (efficient memory use).
+            </li>
+            <li><strong>3️⃣ Priority Queue:</strong> Each element has a priority — highest priority served first.</li>
+            <li><strong>4️⃣ Double-Ended Queue (Deque):</strong> Insertion and deletion possible from both ends.</li>
+        </ul>
+
+        <h3>📘 Example (Circular Queue Concept):</h3>
+        <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+    Circular Queue Representation:
+    Index: 0  1  2  3  4
+    Queue: [10][20][30][__][__]
+    Front = 0, Rear = 2
+    enqueue(40), enqueue(50)
+    Queue full now connects circularly → Rear again points to 0 after 4
+    </pre>
+
+        <div class="example-box">
+            <strong>💻 Example (Queue using STL in C++):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px; overflow-x:auto;">
+#include &lt;iostream&gt;
+#include &lt;queue&gt;
+using namespace std;
+
+int main() {
+    queue&lt;int&gt; q;
+    q.push(10);
+    q.push(20);
+    q.push(30);
+
+    cout << "Front element: " << q.front() << endl;
+    cout << "Rear element: " << q.back() << endl;
+
+    q.pop();
+    cout << "After pop, front: " << q.front() << endl;
+
+    return 0;
+}
+      </pre>
+            <p>
+                👉 STL <code>queue</code> class internally handles all operations dynamically —
+                no overflow/underflow issues, clean and efficient.
+            </p>
+        </div>
+
+        <h2>🧾 Difference Between Stack and Queue:</h2>
+        <table style="width:100%; border-collapse: collapse; margin-top: 15px;">
+            <thead>
+                <tr style="background-color: #a2a486; color: #fff;">
+                    <th style="padding: 10px; border: 1px solid #ccc;">Feature</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Stack</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Queue</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Principle</td>
+                    <td style="text-align:center;">LIFO (Last In, First Out)</td>
+                    <td style="text-align:center;">FIFO (First In, First Out)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Insertion</td>
+                    <td style="text-align:center;">At the top</td>
+                    <td style="text-align:center;">At the rear</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Deletion</td>
+                    <td style="text-align:center;">From the top</td>
+                    <td style="text-align:center;">From the front</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Use Case</td>
+                    <td style="text-align:center;">Recursion, Backtracking, Undo</td>
+                    <td style="text-align:center;">Job scheduling, Buffer handling</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="margin-top: 25px;">
+            <strong>In short,</strong>
+            <strong>Queue</strong> ek linear data structure hai jo <strong>FIFO principle</strong> pe kaam karta hai.
+            Ye system me tasks ko orderly execute karne ke liye use hota hai —
+            jaise printer queues, CPU scheduling aur data streaming. ⚙️
+        </p>
+        <hr style="margin: 50px 0; border: none; border-top: 2px solid #a2a486;">
+
+        <h1>💠 Question 21: What is an <code>Algorithm</code>?</h1>
+
+        <p>
+            Sir, <strong>Algorithm</strong> ek step-by-step process hota hai jo kisi problem ko solve karne ke liye
+            likha jaata hai.
+            Ye basically ek <strong>finite set of instructions</strong> hota hai jo input leta hai, processing karta
+            hai,
+            aur correct output produce karta hai.
+        </p>
+
+        <h2>🔹 Example:</h2>
+        <p>Find the sum of two numbers:</p>
+        <ol>
+            <li>Start</li>
+            <li>Input two numbers a and b</li>
+            <li>Compute sum = a + b</li>
+            <li>Display sum</li>
+            <li>Stop</li>
+        </ol>
+
+        <div class="example-box">
+            <strong>💻 C++ Example:</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px;">
+#include &lt;iostream&gt;
+using namespace std;
+int main() {
+    int a, b;
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
+    cout << "Sum = " << a + b;
+    return 0;
+}
+      </pre>
+        </div>
+
+        <h2>🔹 Characteristics of a Good Algorithm:</h2>
+        <ul>
+            <li><strong>1️⃣ Input:</strong> Clearly defined inputs.</li>
+            <li><strong>2️⃣ Output:</strong> Produces correct and expected result.</li>
+            <li><strong>3️⃣ Finiteness:</strong> Should terminate after finite steps.</li>
+            <li><strong>4️⃣ Definiteness:</strong> Each step must be clear and unambiguous.</li>
+            <li><strong>5️⃣ Effectiveness:</strong> Should be practically executable.</li>
+        </ul>
+
+        <div class="example-box">
+            <strong>🚗 Real Life Example:</strong>
+            <p>
+                Sochh tu chai bana raha hai ☕
+                Step by step: paani ubal, chai patti daal, doodh daal, cheeni daal —
+                ye ek “algorithm” hai chai banane ke liye.
+                Ye finite, clear aur result-oriented process hai.
+            </p>
+        </div>
+
+        <hr style="margin: 30px 0; border-top: 2px solid #a2a486;">
+
+        <h1>💠 Question 22: What is <code>Time Complexity</code>?</h1>
+
+        <p>
+            Sir, <strong>Time Complexity</strong> ek measure hai jo batata hai ki kisi algorithm ko
+            execute hone me kitna time lagta hai depending on the input size (<code>n</code>).
+            Ye actual time nahi batata, balki operations ke growth rate ko represent karta hai.
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Example (O(n) time complexity):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px;">
+for(int i = 0; i &lt; n; i++) {
+    cout &lt;&lt; i;
+}
+// This loop runs n times → O(n)
+      </pre>
+        </div>
+
+        <div class="example-box">
+            <strong>⚙️ Common Time Complexities:</strong>
+            <ul>
+                <li>O(1) → Constant time (e.g., accessing array element)</li>
+                <li>O(log n) → Logarithmic (e.g., Binary Search)</li>
+                <li>O(n) → Linear (e.g., Traversing array)</li>
+                <li>O(n log n) → Linearithmic (e.g., Merge Sort, Quick Sort)</li>
+                <li>O(n²) → Quadratic (e.g., Nested loops)</li>
+                <li>O(2ⁿ) → Exponential (e.g., Recursion in Fibonacci)</li>
+            </ul>
+        </div>
+
+        <div class="example-box">
+            <strong>📊 Visualization:</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px;">
+    Fastest →  O(1)
+                |
+                v
+              O(log n)
+                |
+                v
+              O(n)
+                |
+                v
+              O(n log n)
+                |
+                v
+              O(n²)
+                |
+                v
+              O(2ⁿ)
+      </pre>
+        </div>
+
+        <hr style="margin: 30px 0; border-top: 2px solid #a2a486;">
+
+        <h1>💠 Question 23: What is <code>Space Complexity</code>?</h1>
+
+        <p>
+            Sir, <strong>Space Complexity</strong> batata hai ki kisi algorithm ko run hone ke liye
+            kitni <strong>memory (RAM)</strong> chahiye — variables, input data, recursion stack, etc.
+            Ye total memory usage ka measure hota hai.
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Example:</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px;">
+int sum(int arr[], int n) {
+    int total = 0;    // uses 1 variable
+    for (int i = 0; i &lt; n; i++) {
+        total += arr[i];
+    }
+    return total;
+}
+// Space Complexity = O(1) (constant)
+      </pre>
+        </div>
+
+        <div class="example-box">
+            <strong>🚗 Real Life Example:</strong>
+            <p>
+                Sochh tu ek suitcase me saman pack kar raha hai 🧳
+                Kitna space chahiye ye depend karta hai kitna samaan hai (input size) —
+                waise hi space complexity batata hai program kitni memory consume karega.
+            </p>
+        </div>
+
+        <hr style="margin: 30px 0; border-top: 2px solid #a2a486;">
+
+        <h1>💠 Question 24: What are <code>Asymptotic Notations</code>?</h1>
+
+        <p>
+            Sir, <strong>Asymptotic Notations</strong> mathematical tools hote hain jo algorithm ke
+            <strong>performance growth rate</strong> ko represent karte hain — jaise input size badhne par execution ka
+            behaviour kaisa rahega.
+        </p>
+
+        <h2>🔹 3 Main Types:</h2>
+        <ul>
+            <li><strong>1️⃣ Big O (O):</strong> Worst-case scenario → maximum time lagne wala case.</li>
+            <li><strong>2️⃣ Omega (Ω):</strong> Best-case scenario → minimum time lagne wala case.</li>
+            <li><strong>3️⃣ Theta (Θ):</strong> Average-case → generally expected performance.</li>
+        </ul>
+
+        <div class="example-box">
+            <strong>💻 Example:</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px;">
+for(int i = 0; i &lt; n; i++) {
+    cout &lt;&lt; i;
+}
+// Time Complexity = O(n), Ω(n), Θ(n)
+      </pre>
+        </div>
+
+        <div class="example-box">
+            <strong>📈 Graphically:</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px;">
+    Time ↑
+           |
+           |           O(n)   → Worst Case
+           |    Θ(n)   → Average Case
+           | Ω(n)      → Best Case
+           |
+           └──────────────────→ Input Size (n)
+      </pre>
+        </div>
+
+        <h2>🧾 Types of Analysis:</h2>
+        <ul>
+            <li><strong>Best Case:</strong> Jab algorithm minimum time me execute ho (Ω).</li>
+            <li><strong>Average Case:</strong> Jab normal condition me run ho (Θ).</li>
+            <li><strong>Worst Case:</strong> Jab maximum time lage (O).</li>
+        </ul>
+
+        <p style="margin-top: 25px;">
+            <strong>In short,</strong>
+            <strong>Algorithm Analysis</strong> ka main goal hota hai efficient solution design karna —
+            jisme hum time aur space complexity dono ko minimize karte hain.
+            <strong>Big O</strong> batata hai worst case, <strong>Omega</strong> best case aur <strong>Theta</strong>
+            average case. ⚙️
+        </p>
+        <hr style="margin: 50px 0; border: none; border-top: 2px solid #a2a486;">
+
+        <h1>💠 Question 25: What is <code>Sorting</code> in Data Structure?</h1>
+
+        <p>
+            Sir, <strong>Sorting</strong> ek process hai jisme hum data elements ko ek particular order me arrange karte
+            hain —
+            jaise <strong>ascending (1,2,3,4,5)</strong> ya <strong>descending (5,4,3,2,1)</strong>.
+            Sorting ka main goal hota hai searching aur analysis ko easy banana.
+        </p>
+
+        <h2>🔹 Types of Sorting Algorithms:</h2>
+        <ul>
+            <li>1️⃣ Bubble Sort</li>
+            <li>2️⃣ Selection Sort</li>
+            <li>3️⃣ Insertion Sort</li>
+            <li>4️⃣ Merge Sort</li>
+            <li>5️⃣ Quick Sort</li>
+        </ul>
+
+        <hr style="margin: 30px 0; border-top: 2px solid #a2a486;">
+
+        <h2>1️⃣ Bubble Sort</h2>
+        <p>
+            Bubble sort me adjacent elements compare kiye jaate hain,
+            aur agar wrong order me hote hain to unka swap hota hai.
+            Ye process har pass me “largest element” ko last position tak bubble karta hai.
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Example:</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px;">
+#include &lt;iostream&gt;
+using namespace std;
+
+void bubbleSort(int arr[], int n) {
+    for (int i = 0; i &lt; n-1; i++) {
+        for (int j = 0; j &lt; n-i-1; j++) {
+            if (arr[j] &gt; arr[j+1])
+                swap(arr[j], arr[j+1]);
+        }
+    }
+}
+
+int main() {
+    int arr[] = {5, 1, 4, 2, 8};
+    int n = 5;
+    bubbleSort(arr, n);
+
+    cout &lt;&lt; "Sorted Array: ";
+    for (int i = 0; i &lt; n; i++)
+        cout &lt;&lt; arr[i] &lt;&lt; " ";
+    return 0;
+}
+      </pre>
+        </div>
+
+        <pre style="background:#f4f4f4; padding:10px; border-radius:8px;">
+    Pass 1: [1, 4, 2, 5, 8]
+    Pass 2: [1, 2, 4, 5, 8]
+    Sorted ✔️
+    </pre>
+
+        <ul>
+            <li>🕐 Time Complexity: O(n²)</li>
+            <li>💾 Space Complexity: O(1)</li>
+            <li>💡 Best For: Small datasets</li>
+        </ul>
+
+        <div class="example-box">
+            <strong>🚗 Real Life Example:</strong>
+            <p>
+                Sochh tu cards ko arrange kar raha hai — har bar tu dono adjacent cards compare karta hai
+                aur galat order me honge to swap karta hai — exactly bubble sort jaisa.
+            </p>
+        </div>
+
+        <hr style="margin: 30px 0; border-top: 2px solid #a2a486;">
+
+        <h2>2️⃣ Selection Sort</h2>
+        <p>
+            Selection sort me hum ek ek pass me <strong>smallest element</strong> ko dhoondte hain
+            aur usse array ke starting position me swap karte hain.
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Example:</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px;">
+void selectionSort(int arr[], int n) {
+    for (int i = 0; i &lt; n-1; i++) {
+        int minIndex = i;
+        for (int j = i+1; j &lt; n; j++) {
+            if (arr[j] &lt; arr[minIndex])
+                minIndex = j;
+        }
+        swap(arr[minIndex], arr[i]);
+    }
+}
+      </pre>
+        </div>
+
+        <ul>
+            <li>🕐 Time Complexity: O(n²)</li>
+            <li>💾 Space Complexity: O(1)</li>
+            <li>💡 Stable: No (because swaps change order)</li>
+        </ul>
+
+        <div class="example-box">
+            <strong>🚗 Real Life Example:</strong>
+            <p>
+                Sochh tu race me ho aur har round me sabse slow runner ko eliminate kar raha hai
+                — gradually fastest ko front me la raha hai. Yehi selection sort hai.
+            </p>
+        </div>
+
+        <hr style="margin: 30px 0; border-top: 2px solid #a2a486;">
+
+        <h2>3️⃣ Insertion Sort</h2>
+        <p>
+            Insertion sort me array ko <strong>partially sorted</strong> aur <strong>unsorted</strong> part me divide
+            karte hain.
+            Har iteration me next element ko uske correct position pe insert karte hain.
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Example:</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px;">
+void insertionSort(int arr[], int n) {
+    for (int i = 1; i &lt; n; i++) {
+        int key = arr[i];
+        int j = i - 1;
+        while (j &gt;= 0 && arr[j] &gt; key) {
+            arr[j + 1] = arr[j];
+            j--;
+        }
+        arr[j + 1] = key;
+    }
+}
+      </pre>
+        </div>
+
+        <ul>
+            <li>🕐 Time Complexity: O(n²)</li>
+            <li>💾 Space Complexity: O(1)</li>
+            <li>💡 Best Case: O(n) (already sorted data)</li>
+        </ul>
+
+        <div class="example-box">
+            <strong>🚗 Real Life Example:</strong>
+            <p>
+                Sochh tu apne cards ko arrange kar raha hai aur har bar ek card uthake
+                usse correct jagah pe insert kar raha hai — exactly insertion sort.
+            </p>
+        </div>
+
+        <hr style="margin: 30px 0; border-top: 2px solid #a2a486;">
+
+        <h2>4️⃣ Merge Sort</h2>
+        <p>
+            Merge Sort ek <strong>Divide and Conquer</strong> algorithm hai.
+            Ye array ko recursively do halves me divide karta hai,
+            dono halves ko sort karta hai aur fir merge karta hai.
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Example:</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px;">
+void merge(int arr[], int l, int m, int r) {
+    int n1 = m - l + 1;
+    int n2 = r - m;
+
+    int L[n1], R[n2];
+    for (int i = 0; i &lt; n1; i++) L[i] = arr[l + i];
+    for (int j = 0; j &lt; n2; j++) R[j] = arr[m + 1 + j];
+
+    int i = 0, j = 0, k = l;
+    while (i &lt; n1 && j &lt; n2) {
+        if (L[i] &lt;= R[j])
+            arr[k++] = L[i++];
+        else
+            arr[k++] = R[j++];
+    }
+    while (i &lt; n1) arr[k++] = L[i++];
+    while (j &lt; n2) arr[k++] = R[j++];
+}
+
+void mergeSort(int arr[], int l, int r) {
+    if (l &lt; r) {
+        int m = (l + r) / 2;
+        mergeSort(arr, l, m);
+        mergeSort(arr, m + 1, r);
+        merge(arr, l, m, r);
+    }
+}
+      </pre>
+        </div>
+
+        <ul>
+            <li>🕐 Time Complexity: O(n log n)</li>
+            <li>💾 Space Complexity: O(n)</li>
+            <li>💡 Stable: Yes</li>
+        </ul>
+
+        <div class="example-box">
+            <strong>🚗 Real Life Example:</strong>
+            <p>
+                Sochh tu 2 sorted player lists ko merge kar raha hai into one sorted list —
+                exactly merge sort jaisa logic.
+            </p>
+        </div>
+
+        <hr style="margin: 30px 0; border-top: 2px solid #a2a486;">
+
+        <h2>5️⃣ Quick Sort</h2>
+        <p>
+            Quick Sort bhi <strong>Divide and Conquer</strong> algorithm hai.
+            Ye ek <strong>pivot element</strong> choose karta hai aur array ko
+            pivot ke chhote aur bade elements me divide karta hai,
+            fir recursively dono parts ko sort karta hai.
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Example:</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px;">
+int partition(int arr[], int low, int high) {
+    int pivot = arr[high];
+    int i = (low - 1);
+
+    for (int j = low; j &lt; high; j++) {
+        if (arr[j] &lt;= pivot) {
+            i++;
+            swap(arr[i], arr[j]);
+        }
+    }
+    swap(arr[i + 1], arr[high]);
+    return (i + 1);
+}
+
+void quickSort(int arr[], int low, int high) {
+    if (low &lt; high) {
+        int pi = partition(arr, low, high);
+        quickSort(arr, low, pi - 1);
+        quickSort(arr, pi + 1, high);
+    }
+}
+      </pre>
+        </div>
+
+        <ul>
+            <li>🕐 Time Complexity: O(n log n)</li>
+            <li>💾 Worst Case: O(n²) (if pivot chosen poorly)</li>
+            <li>💾 Space Complexity: O(log n)</li>
+            <li>💡 Best For: Large datasets, practical use</li>
+        </ul>
+
+        <div class="example-box">
+            <strong>🚗 Real Life Example:</strong>
+            <p>
+                Sochh tu random players ko pivot ke basis pe do groups me baant raha hai —
+                left me chhote, right me bade — fir dono group sort kar raha hai recursively.
+                Wahi quick sort logic hai.
+            </p>
+        </div>
+
+        <h2>🧾 Comparison of Sorting Algorithms:</h2>
+        <table style="width:100%; border-collapse: collapse;">
+            <thead>
+                <tr style="background-color: #a2a486; color: white;">
+                    <th style="padding:10px;">Algorithm</th>
+                    <th style="padding:10px;">Best Case</th>
+                    <th style="padding:10px;">Average Case</th>
+                    <th style="padding:10px;">Worst Case</th>
+                    <th style="padding:10px;">Space</th>
+                    <th style="padding:10px;">Stability</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bubble Sort</td>
+                    <td>O(n)</td>
+                    <td>O(n²)</td>
+                    <td>O(n²)</td>
+                    <td>O(1)</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Selection Sort</td>
+                    <td>O(n²)</td>
+                    <td>O(n²)</td>
+                    <td>O(n²)</td>
+                    <td>O(1)</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Insertion Sort</td>
+                    <td>O(n)</td>
+                    <td>O(n²)</td>
+                    <td>O(n²)</td>
+                    <td>O(1)</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Merge Sort</td>
+                    <td>O(n log n)</td>
+                    <td>O(n log n)</td>
+                    <td>O(n log n)</td>
+                    <td>O(n)</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Quick Sort</td>
+                    <td>O(n log n)</td>
+                    <td>O(n log n)</td>
+                    <td>O(n²)</td>
+                    <td>O(log n)</td>
+                    <td>No</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="margin-top: 25px;">
+            <strong>In short,</strong>
+            Sorting algorithms improve data organization and searching efficiency.
+            <strong>Bubble, Selection, and Insertion</strong> are simple and easy to implement,
+            while <strong>Merge</strong> and <strong>Quick Sort</strong> are powerful for large datasets due to
+            <strong>O(n log n)</strong> performance. ⚙️
+        </p>
+        <hr style="margin: 50px 0; border: none; border-top: 2px solid #a2a486;">
+
+        <h1>💠 Question 26: What are <code>Searching Algorithms</code> in Data Structure?</h1>
+
+        <p>
+            Sir, <strong>Searching</strong> ka matlab hota hai kisi data set me particular element ko dhoondhna.
+            Searching algorithms ka use data structures (array, linked list, etc.) me
+            <strong>efficiently element locate karne</strong> ke liye hota hai.
+        </p>
+
+        <h2>🔹 Types of Searching Algorithms:</h2>
+        <ul>
+            <li>1️⃣ Linear Search (Sequential Search)</li>
+            <li>2️⃣ Binary Search</li>
+        </ul>
+
+        <hr style="margin: 30px 0; border-top: 2px solid #a2a486;">
+
+        <h2>1️⃣ Linear Search</h2>
+        <p>
+            Linear search me hum har element ko sequentially check karte hain jab tak
+            desired element mil nahi jaata ya list khatam nahi hoti.
+            Ye simple hota hai par bade data set ke liye slow.
+        </p>
+
+        <div class="example-box">
+            <strong>💻 Example (C++):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px;">
+#include &lt;iostream&gt;
+using namespace std;
+
+int linearSearch(int arr[], int n, int key) {
+    for (int i = 0; i &lt; n; i++) {
+        if (arr[i] == key)
+            return i; // found at index i
+    }
+    return -1; // not found
+}
+
+int main() {
+    int arr[] = {10, 25, 30, 45, 50};
+    int n = 5, key = 30;
+
+    int result = linearSearch(arr, n, key);
+    if (result != -1)
+        cout &lt;&lt; "Element found at index " &lt;&lt; result;
+    else
+        cout &lt;&lt; "Element not found!";
+    return 0;
+}
+      </pre>
+        </div>
+
+        <div class="example-box">
+            <strong>🧠 Working Example:</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px;">
+    Array: [10, 25, 30, 45, 50]
+    Search for: 30
+    Step 1 → Compare with 10 ❌
+    Step 2 → Compare with 25 ❌
+    Step 3 → Compare with 30 ✅ Found!
+      </pre>
+        </div>
+
+        <ul>
+            <li>🕐 Time Complexity: O(n)</li>
+            <li>💾 Space Complexity: O(1)</li>
+            <li>💡 Best Case: Element found at start → O(1)</li>
+            <li>💡 Worst Case: Element at end or not found → O(n)</li>
+        </ul>
+
+        <div class="example-box">
+            <strong>🚗 Real Life Example:</strong>
+            <p>
+                Sochh tu ek file cabinet me document dhoondh raha hai 📂
+                Tu har folder ek ek karke check kar raha hai jab tak mil nahi jaata —
+                ye hi linear search hai.
+            </p>
+        </div>
+
+        <hr style="margin: 30px 0; border-top: 2px solid #a2a486;">
+
+        <h2>2️⃣ Binary Search</h2>
+        <p>
+            <strong>Binary Search</strong> ek efficient algorithm hai jo <strong>sorted arrays</strong> par kaam karta
+            hai.
+            Isme hum middle element se comparison karte hain:
+        </p>
+        <ul>
+            <li>Agar key middle element se chhoti hai → left half me search karo</li>
+            <li>Agar key badi hai → right half me search karo</li>
+            <li>Repeat until element mil jaaye ya range khatam ho jaaye</li>
+        </ul>
+
+        <div class="example-box">
+            <strong>💻 Example (C++):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px;">
+#include &lt;iostream&gt;
+using namespace std;
+
+int binarySearch(int arr[], int n, int key) {
+    int low = 0, high = n - 1;
+
+    while (low &lt;= high) {
+        int mid = (low + high) / 2;
+
+        if (arr[mid] == key)
+            return mid; // element found
+        else if (arr[mid] &lt; key)
+            low = mid + 1; // right side
+        else
+            high = mid - 1; // left side
+    }
+    return -1; // not found
+}
+
+int main() {
+    int arr[] = {10, 20, 30, 40, 50, 60};
+    int n = 6, key = 40;
+
+    int result = binarySearch(arr, n, key);
+    if (result != -1)
+        cout &lt;&lt; "Element found at index " &lt;&lt; result;
+    else
+        cout &lt;&lt; "Element not found!";
+    return 0;
+}
+      </pre>
+        </div>
+
+        <div class="example-box">
+            <strong>🧠 Working Example:</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px;">
+    Array: [10, 20, 30, 40, 50, 60]
+    Search for: 40
+
+    Step 1 → mid = 30 → 40 > 30 → right side
+    Step 2 → mid = 50 → 40 < 50 → left side
+    Step 3 → mid = 40 ✅ Found!
+      </pre>
+        </div>
+
+        <ul>
+            <li>🕐 Time Complexity: O(log n)</li>
+            <li>💾 Space Complexity: O(1)</li>
+            <li>💡 Condition: Works only on sorted data</li>
+        </ul>
+
+        <div class="example-box">
+            <strong>🚗 Real Life Example:</strong>
+            <p>
+                Sochh tu ek dictionary me word “Computer” dhoondh raha hai 📖
+                Tu middle page kholta hai aur dekhta hai alphabet order ke hisaab se
+                aage ya peeche jaaye — ye hi binary search logic hai.
+            </p>
+        </div>
+
+        <h2>🧾 Comparison Between Linear Search and Binary Search:</h2>
+        <table style="width:100%; border-collapse: collapse;">
+            <thead>
+                <tr style="background-color: #a2a486; color: white;">
+                    <th style="padding:10px;">Feature</th>
+                    <th style="padding:10px;">Linear Search</th>
+                    <th style="padding:10px;">Binary Search</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Working Principle</td>
+                    <td>Sequential comparison</td>
+                    <td>Divide & Conquer</td>
+                </tr>
+                <tr>
+                    <td>Input Data</td>
+                    <td>Unsorted or Sorted</td>
+                    <td>Only Sorted</td>
+                </tr>
+                <tr>
+                    <td>Time Complexity</td>
+                    <td>O(n)</td>
+                    <td>O(log n)</td>
+                </tr>
+                <tr>
+                    <td>Space Complexity</td>
+                    <td>O(1)</td>
+                    <td>O(1)</td>
+                </tr>
+                <tr>
+                    <td>Performance</td>
+                    <td>Slow for large data</td>
+                    <td>Fast & efficient</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="margin-top: 25px;">
+            <strong>In short,</strong>
+            <strong>Linear Search</strong> simple but slow hai,
+            jabki <strong>Binary Search</strong> sorted data ke liye best aur fast hai (O(log n)).
+            Binary Search data ko half-half divide karke search karta hai — efficient and scalable. ⚙️
+        </p>
+        <hr style="margin: 50px 0; border: none; border-top: 2px solid #a2a486;">
+
+        <h1>💠 Question 27: What is a <code>Tree</code> in Data Structure?</h1>
+
+        <p>
+            Sir, <strong>Tree</strong> ek <strong>non-linear hierarchical data structure</strong> hai
+            jisme elements (nodes) parent-child relationship me connected hote hain.
+            Ye top-down structure me arranged hoti hai jisme ek node ko <strong>root</strong> kehte hain
+            aur baaki sab uske descendants hote hain.
+        </p>
+
+        <h2>🔹 Basic Terminology:</h2>
+        <ul>
+            <li><strong>Node:</strong> Each element of tree.</li>
+            <li><strong>Root:</strong> The topmost node (starting point).</li>
+            <li><strong>Parent & Child:</strong> Relationship between connected nodes.</li>
+            <li><strong>Leaf Node:</strong> Node with no children.</li>
+            <li><strong>Edge:</strong> Connection between parent and child.</li>
+            <li><strong>Height:</strong> Longest path from root to a leaf.</li>
+        </ul>
+
+        <div class="example-box">
+            <strong>🌳 Example (Binary Tree Structure):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px;">
+              [10]
+             /    \
+          [5]     [20]
+          / \      /
+       [3] [7]  [15]
+      </pre>
+        </div>
+
+        <div class="example-box">
+            <strong>💻 Example (C++ Implementation):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px;">
+#include &lt;iostream&gt;
+using namespace std;
+
+class Node {
+public:
+    int data;
+    Node* left;
+    Node* right;
+
+    Node(int val) {
+        data = val;
+        left = right = NULL;
+    }
+};
+
+// Inorder Traversal (Left → Root → Right)
+void inorder(Node* root) {
+    if (root == NULL) return;
+    inorder(root->left);
+    cout << root->data << " ";
+    inorder(root->right);
+}
+
+int main() {
+    Node* root = new Node(10);
+    root->left = new Node(5);
+    root->right = new Node(20);
+    root->left->left = new Node(3);
+    root->left->right = new Node(7);
+
+    cout << "Inorder Traversal: ";
+    inorder(root);
+    return 0;
+}
+      </pre>
+        </div>
+
+        <h2>🔹 Types of Trees:</h2>
+        <ul>
+            <li><strong>1️⃣ Binary Tree:</strong> Each node has max 2 children (Left & Right).</li>
+            <li><strong>2️⃣ Binary Search Tree (BST):</strong> Left child < Parent < Right child.</li>
+            <li><strong>3️⃣ AVL Tree:</strong> Self-balancing binary search tree.</li>
+            <li><strong>4️⃣ B-Tree:</strong> Used in databases and file systems.</li>
+        </ul>
+
+        <div class="example-box">
+            <strong>🚗 Real Life Example:</strong>
+            <p>
+                Sochh ek “Family Tree” — jisme ek grandparent (root) ke niche parents aur unke niche children hote hain.
+                Waisa hi tree structure hota hai programming me.
+            </p>
+        </div>
+
+        <h2>🧾 Tree Traversal Methods:</h2>
+        <ul>
+            <li><strong>1️⃣ Inorder (Left, Root, Right)</strong></li>
+            <li><strong>2️⃣ Preorder (Root, Left, Right)</strong></li>
+            <li><strong>3️⃣ Postorder (Left, Right, Root)</strong></li>
+        </ul>
+
+        <hr style="margin: 40px 0; border-top: 2px solid #a2a486;">
+
+        <h1>💠 Question 28: What is a <code>Graph</code> in Data Structure?</h1>
+
+        <p>
+            Sir, <strong>Graph</strong> ek <strong>non-linear data structure</strong> hai
+            jisme nodes (called <strong>vertices</strong>) aur unke connections (called <strong>edges</strong>) hote
+            hain.
+            Ye real-world relationships represent karta hai — like social networks, maps, or networks.
+        </p>
+
+        <div class="example-box">
+            <strong>🌐 Structure of Graph:</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px;">
+    Vertices: {A, B, C, D}
+    Edges:
+       A → B
+       A → C
+       B → D
+       C → D
+      </pre>
+        </div>
+
+        <h2>🔹 Types of Graphs:</h2>
+        <ul>
+            <li><strong>1️⃣ Directed Graph:</strong> Edges have direction (A → B).</li>
+            <li><strong>2️⃣ Undirected Graph:</strong> Edges have no direction (A — B).</li>
+            <li><strong>3️⃣ Weighted Graph:</strong> Each edge has a cost or weight (e.g., distance or time).</li>
+            <li><strong>4️⃣ Unweighted Graph:</strong> All edges equal importance.</li>
+        </ul>
+
+        <div class="example-box">
+            <strong>💻 Example (Graph using Adjacency List):</strong>
+            <pre style="background:#f4f4f4; padding:10px; border-radius:8px;">
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+class Graph {
+    int V;
+    vector&lt;vector&lt;int&gt;&gt; adj;
+public:
+    Graph(int V) {
+        this->V = V;
+        adj.resize(V);
+    }
+
+    void addEdge(int u, int v) {
+        adj[u].push_back(v);
+        adj[v].push_back(u); // for undirected graph
+    }
+
+    void display() {
+        for (int i = 0; i &lt; V; i++) {
+            cout &lt;&lt; i &lt;&lt; " -> ";
+            for (auto node : adj[i]) {
+                cout &lt;&lt; node &lt;&lt; " ";
+            }
+            cout &lt;&lt; endl;
+        }
+    }
+};
+
+int main() {
+    Graph g(4);
+    g.addEdge(0, 1);
+    g.addEdge(0, 2);
+    g.addEdge(1, 3);
+    g.display();
+    return 0;
+}
+      </pre>
+        </div>
+
+        <h2>🔹 Graph Representation:</h2>
+        <ul>
+            <li><strong>Adjacency Matrix:</strong> 2D array representing connections.</li>
+            <li><strong>Adjacency List:</strong> Array of linked lists (memory efficient).</li>
+        </ul>
+
+        <div class="example-box">
+            <strong>🧠 Real Life Example:</strong>
+            <p>
+                Sochh ek <strong>Google Map</strong> jisme cities nodes hain aur unke beech ke roads edges.
+                Distance = weight.
+                Wahi ek graph ka real-world model hai.
+            </p>
+        </div>
+
+        <h2>🧾 Difference Between Tree and Graph:</h2>
+        <table style="width:100%; border-collapse: collapse;">
+            <thead>
+                <tr style="background-color: #a2a486; color:white;">
+                    <th style="padding:10px;">Feature</th>
+                    <th style="padding:10px;">Tree</th>
+                    <th style="padding:10px;">Graph</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Structure Type</td>
+                    <td>Hierarchical</td>
+                    <td>Network</td>
+                </tr>
+                <tr>
+                    <td>Connection</td>
+                    <td>Parent to Child (One Way)</td>
+                    <td>Node to Node (Any direction)</td>
+                </tr>
+                <tr>
+                    <td>Cycle</td>
+                    <td>No cycles allowed</td>
+                    <td>Cycles allowed</td>
+                </tr>
+                <tr>
+                    <td>Root</td>
+                    <td>Single Root</td>
+                    <td>No root (any node can connect)</td>
+                </tr>
+                <tr>
+                    <td>Edges</td>
+                    <td>Always N-1 for N nodes</td>
+                    <td>Can be any number</td>
+                </tr>
+                <tr>
+                    <td>Traversal</td>
+                    <td>DFS, BFS, Inorder, Preorder</td>
+                    <td>DFS, BFS</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="margin-top:25px;">
+            <strong>In short,</strong>
+            <strong>Tree</strong> ek hierarchical, acyclic structure hoti hai with one root,
+            jabki <strong>Graph</strong> ek generic network hota hai jisme multiple connections aur cycles ho sakte
+            hain.
+            Tree is a special type of Graph. ⚙️
+        </p>
+
+    </div>
+
+</body>
+
+</html>
