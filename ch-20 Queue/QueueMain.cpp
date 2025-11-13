@@ -2,7 +2,7 @@
 int main()
 {
     int size;
-
+ 
     cout << "Enter number of elements : ";
     cin >> size;
 
