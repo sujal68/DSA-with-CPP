@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/C++ Viva Questions - Complete Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 0.8s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .question {
+            font-size: 1.3em;
+            color: #667eea;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .question::before {
+            content: "Q";
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .answer {
+            color: #333;
+            line-height: 1.8;
+            font-size: 1.05em;
+            padding-left: 45px;
+        }
+
+        .answer strong {
+            color: #764ba2;
+        }
+
+        .points {
+            background: #f8f9ff;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+            border-left: 4px solid #667eea;
+        }
+
+        .points li {
+            margin: 8px 0;
+            color: #555;
+        }
+
+        .example {
+            background: #fff8e1;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+            border-left: 4px solid #ffc107;
+            font-family: 'Courier New', monospace;
+        }
+
+        .section-title {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            margin: 30px 0 20px 0;
+            font-size: 1.5em;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease;
+        }
+
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 15px 0;
+        }
+
+        .comparison-item {
+            background: #f0f4ff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 2px solid #667eea;
+        }
+
+        .comparison-item h4 {
+            color: #667eea;
+            margin-bottom: 8px;
+        }
+
+        code {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 8px;
+            display: block;
+            overflow-x: auto;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+            line-height: 1.6;
+        }
+
+        .emoji {
+            font-size: 1.2em;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                padding: 20px;
+            }
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #ffc107 0%, #ff9800 100%);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .tip {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+
+        .tip::before {
+            content: "💡 Tip: ";
+            font-weight: bold;
+            color: #4caf50;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎓 C/C++ Viva Questions</h1>
+            <p>Complete Guide - Hinglish me, Viva Perfect ✨</p>
+        </div>
+
+        <div class="section-title">📚 Basic Concepts</div>
+
+        <div class="card">
+            <div class="question">Array kya hai?</div>
+            <div class="answer">
+                <strong>"Array ek fixed-size, linear data structure hota hai jo same type ke elements ko continuous
+                    memory me store karta hai."</strong>
+
+                <div class="points">
+                    <strong>Key Points:</strong>
+                    <ul>
+                        <li>Array ka size fixed hota hai</li>
+                        <li>Saare elements same data type ke hote hain</li>
+                        <li>Memory contiguous hoti hai (side-by-side blocks)</li>
+                        <li>Access index se direct hota hai (0-based indexing)</li>
+                    </ul>
+                </div>
+
+                <div class="example">
+                    <strong>Example:</strong> int a[5] ek array hai, jisme 5 integers store hote hain, aur a[0] first
+                    element hota hai.
+                </div>
+
+                <div class="tip">
+                    Sorting arrays par isliye fast hoti hai kyunki array contiguous memory deta hai, elements ka direct
+                    access mil jata hai, aur compare/swap operations easy hote hain.
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Data Structure kya hai?</div>
+            <div class="answer">
+                <strong>"Data Structure ek tarika hota hai jisse hum data ko efficiently store, organize aur manage
+                    karte hain."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Programming kya hai?</div>
+            <div class="answer">
+                <strong>"Programming woh process hai jisme hum computer ko instructions likhkar batate hain ki usse kaam
+                    kaise karna hai."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Variable kya hai?</div>
+            <div class="answer">
+                <strong>"Variable ek naam hota hai jisme hum koi value store karte hain."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Constant kya hai?</div>
+            <div class="answer">
+                <strong>"Constant wo value hoti hai jo program ke execution ke during change nahi hoti."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Data Type kya hai?</div>
+            <div class="answer">
+                <strong>"Data type decide karta hai ki variable me kis type ka data store hoga."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Identifier kya hai?</div>
+            <div class="answer">
+                <strong>"Identifier kisi variable, function ya entity ka naam hota hai."</strong>
+            </div>
+        </div>
+
+        <div class="section-title">⚙️ Operators</div>
+
+        <div class="card">
+            <div class="question">Operator kya hai?</div>
+            <div class="answer">
+                <strong>"Operator ek symbol hota hai jo values par koi operation perform karta hai, jaise addition,
+                    subtraction ya comparison."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Operator ke types (Unary, Binary, Ternary)</div>
+            <div class="answer">
+                <div class="comparison">
+                    <div class="comparison-item">
+                        <h4>1️⃣ Unary Operator</h4>
+                        <p>"Unary operator wo hota hai jo sirf ek single operand par operation perform karta hai."</p>
+                        <div class="example">Example: ++, --, !</div>
+                    </div>
+                    <div class="comparison-item">
+                        <h4>2️⃣ Binary Operator</h4>
+                        <p>"Binary operator wo hota hai jo do operands ke beech operation perform karta hai."</p>
+                        <div class="example">Example: +, -, *, /, %</div>
+                    </div>
+                </div>
+                <div class="comparison-item" style="margin-top: 15px;">
+                    <h4>3️⃣ Ternary Operator</h4>
+                    <p>"Ternary operator wo hota hai jo teen operands ke saath kaam karta hai aur condition ke basis par
+                        value return karta hai."</p>
+                    <div class="example">Example: condition ? true : false</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Operator Precedence kya hai?</div>
+            <div class="answer">
+                <strong>"Operator precedence ka matlab hota hai ki kaunsa operator pehle execute hoga jab ek hi
+                    expression me multiple operators ho."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">= aur == operator me difference</div>
+            <div class="answer">
+                <div class="comparison">
+                    <div class="comparison-item">
+                        <h4>= (Assignment)</h4>
+                        <p>Value assign karta hai</p>
+                    </div>
+                    <div class="comparison-item">
+                        <h4>== (Comparison)</h4>
+                        <p>Values compare karta hai</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">sizeof Operator ka use</div>
+            <div class="answer">
+                <strong>"Ye kisi variable ya data type ka size bytes me batata hai."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Increment & Decrement Operator</div>
+            <div class="answer">
+                <strong>Increment (++)</strong> value badhata hai<br>
+                <strong>Decrement (--)</strong> value ghataata hai
+            </div>
+        </div>
+
+        <div class="section-title">🔄 Control Structures</div>
+
+        <div class="card">
+            <div class="question">Control Structure kya hai?</div>
+            <div class="answer">
+                <strong>"Control Structure wo hota hai jo program ke flow ko control karta hai — yani statements kaise,
+                    kis order me, aur kab execute honge."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Control Statement kya hai?</div>
+            <div class="answer">
+                <strong>"Control Statement wo statement hota hai jo program ke execution ko control karta hai, jaise
+                    decision-making ya looping."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Selection Statement kya hai?</div>
+            <div class="answer">
+                <strong>"Selection statement wo hota hai jo condition ke basis par decide karta hai ki kaunsa statement
+                    execute hoga."</strong>
+                <div class="example">Example: if, else, else if, switch</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Switch Statement kya hai?</div>
+            <div class="answer">
+                <strong>"Switch multi-condition decision making ke liye use hota hai."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Switch me default ka use</div>
+            <div class="answer">
+                <strong>"Default tab execute hota hai jab koi case match nahi hota."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Looping kya hai?</div>
+            <div class="answer">
+                <strong>"Looping ka matlab ek statement ko baar-baar repeat karna."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">While aur Do-While me difference</div>
+            <div class="answer">
+                <div class="comparison">
+                    <div class="comparison-item">
+                        <h4>While Loop</h4>
+                        <p>Condition pehle check hoti hai</p>
+                    </div>
+                    <div class="comparison-item">
+                        <h4>Do-While Loop</h4>
+                        <p>Pehle body chalegi, condition baad me check hoti hai</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Nested Loop kya hai?</div>
+            <div class="answer">
+                <strong>"Jab ek loop ke andar dusra loop likha ho, use nested loop kehte hain."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Infinite Loop kya hai?</div>
+            <div class="answer">
+                <strong>"Jab loop ki condition kabhi false nahi hoti aur loop hamesha chalta rahe."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">break Statement ka use</div>
+            <div class="answer">
+                <strong>"Loop ya switch ko turant stop karne ke liye use hota hai."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">continue Statement ka use</div>
+            <div class="answer">
+                <strong>"Continue current iteration skip karke next iteration start karta hai."</strong>
+            </div>
+        </div>
+
+        <div class="section-title">🔧 Advanced Concepts</div>
+
+        <div class="card">
+            <div class="question">Compiler aur Interpreter me difference</div>
+            <div class="answer">
+                <div class="comparison">
+                    <div class="comparison-item">
+                        <h4>Compiler</h4>
+                        <p>"Pura code ek saath translate karta hai aur executable file banata hai."</p>
+                        <ul>
+                            <li>Fast execution</li>
+                            <li>Error detection pehle</li>
+                            <li>Machine code generate karta hai</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-item">
+                        <h4>Interpreter</h4>
+                        <p>"Code ko line-by-line translate karke turant execute karta hai."</p>
+                        <ul>
+                            <li>Slow execution</li>
+                            <li>Error detection line-by-line</li>
+                            <li>No separate executable file</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">C aur C++ me difference</div>
+            <div class="answer">
+                <div class="comparison">
+                    <div class="comparison-item">
+                        <h4>C Language</h4>
+                        <ul>
+                            <li>Procedure-Oriented Language</li>
+                            <li>Top-Down approach</li>
+                            <li>No OOP concepts</li>
+                            <li>Less secure</li>
+                            <li>System programming, OS</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-item">
+                        <h4>C++ Language</h4>
+                        <ul>
+                            <li>Object-Oriented Language</li>
+                            <li>Bottom-Up approach</li>
+                            <li>Full OOP support</li>
+                            <li>More secure (encapsulation)</li>
+                            <li>Game dev, OOP applications</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tip">
+                    C procedure-oriented hai, C++ object-oriented hai; C me classes nahi hoti, C++ me OOP concepts hote
+                    hain.
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Pointer kya hai?</div>
+            <div class="answer">
+                <strong>"Pointer ek variable hota hai jo kisi memory address ko store karta hai."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Array aur Pointer me difference</div>
+            <div class="answer">
+                <div class="comparison">
+                    <div class="comparison-item">
+                        <h4>Array</h4>
+                        <p>Fixed size, contiguous memory</p>
+                    </div>
+                    <div class="comparison-item">
+                        <h4>Pointer</h4>
+                        <p>Memory address store karta hai</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Function kya hai?</div>
+            <div class="answer">
+                <strong>"Function ek block hota hai jo specific task perform karta hai."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Recursion kya hai?</div>
+            <div class="answer">
+                <strong>"Recursion wo process hai jisme function khud ko call karta hai."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">return Statement ka use</div>
+            <div class="answer">
+                <strong>"Function se value wapas bhejne ya function ko end karne ke liye use hota hai."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Call by Value</div>
+            <div class="answer">
+                <strong>"Call by value me function ko value ki copy milti hai."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Call by Reference</div>
+            <div class="answer">
+                <strong>"Call by reference me function directly original variable par kaam karta hai."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Global aur Local Variable me difference</div>
+            <div class="answer">
+                <div class="comparison">
+                    <div class="comparison-item">
+                        <h4>Local Variable</h4>
+                        <p>Function ke andar valid</p>
+                    </div>
+                    <div class="comparison-item">
+                        <h4>Global Variable</h4>
+                        <p>Poore program me valid</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-title">📝 Strings & Special Topics</div>
+
+        <div class="card">
+            <div class="question">String kya hai?</div>
+            <div class="answer">
+                <strong>"String characters ka sequence hota hai jo last me null ('\0') se end hota hai."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">char aur string me difference</div>
+            <div class="answer">
+                <div class="comparison">
+                    <div class="comparison-item">
+                        <h4>char</h4>
+                        <p>Ek single character store karta hai</p>
+                    </div>
+                    <div class="comparison-item">
+                        <h4>string</h4>
+                        <p>Multiple characters store karta hai</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Escape Sequence Characters</div>
+            <div class="answer">
+                <strong>"Escape sequence characters special characters hote hain jo backslash (\) ke saath use kiye
+                    jaate hain, taaki hum output me newline, tab, quote jaisi cheezein print kar sakein."</strong>
+
+                <div class="points">
+                    <strong>Common Examples:</strong>
+                    <ul>
+                        <li><span class="highlight">\n</span> → new line</li>
+                        <li><span class="highlight">\t</span> → tab space</li>
+                        <li><span class="highlight">\"</span> → double quote</li>
+                        <li><span class="highlight">\\</span> → backslash</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">getchar() aur putchar() ka use</div>
+            <div class="answer">
+                <strong>getchar():</strong> Ek single character input leta hai<br>
+                <strong>putchar():</strong> Ek single character output karta hai
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Comment kya hai?</div>
+            <div class="answer">
+                <strong>"Comment ek note hota hai jo explanation ke liye likhte hain, compiler ignore karta
+                    hai."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Header File kya hai?</div>
+            <div class="answer">
+                <strong>"Header file me predefined functions aur declarations hote hain."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Type Casting kya hai?</div>
+            <div class="answer">
+                <strong>"Type casting ka matlab ek data type ko dusre data type me convert karna."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Syntax Error kya hai?</div>
+            <div class="answer">
+                <strong>"Syntax error tab hota hai jab code language ke rules ko follow nahi karta."</strong>
+            </div>
+        </div>
+
+        <div class="section-title">🏗️ Data Structures</div>
+
+        <div class="card">
+            <div class="question">Array Index kya hai?</div>
+            <div class="answer">
+                <strong>"Array index wo number hota hai jisse array ke element ko access karte hain."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Array Traversal kya hai?</div>
+            <div class="answer">
+                <strong>"Array traversal matlab array ke har element ko ek-ek karke access karna."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Structure kya hai?</div>
+            <div class="answer">
+                <strong>"Structure ek user-defined data type hai jisme different types ke data store kar sakte
+                    hain."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Union kya hai?</div>
+            <div class="answer">
+                <strong>"Union bhi user-defined type hai, par sab members same memory share karte hain."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Structure aur Union me difference</div>
+            <div class="answer">
+                <div class="comparison">
+                    <div class="comparison-item">
+                        <h4>Structure</h4>
+                        <p>Har member ka separate memory</p>
+                    </div>
+                    <div class="comparison-item">
+                        <h4>Union</h4>
+                        <p>Sab members same memory share karte hain</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-title">🔍 Searching & Algorithms</div>
+
+        <div class="card">
+            <div class="question">Searching kya hai?</div>
+            <div class="answer">
+                <strong>"Searching ka matlab kisi data structure me kisi specific element ko dhoondhna."</strong>
+
+                <div class="points">
+                    <strong>Types of Searching:</strong>
+                    <ul>
+                        <li><strong>Linear Search:</strong> Element ko ek-ek karke check karke dhoondte hain</li>
+                        <li><strong>Binary Search:</strong> Sorted data me mid ke basis par fast searching hoti hai</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">BST (Binary Search Tree) kya hai?</div>
+            <div class="answer">
+                <strong>"BST ek tree hota hai jisme left side ke nodes chhote hote hain aur right side ke nodes bade
+                    hote hain."</strong>
+
+                <div class="tip">
+                    BST me searching root se start hoti hai; element chhota ho to left jate hain, bada ho to right jate
+                    hain — jab tak element mil na jaye.
+                </div>
+
+                <div class="points">
+                    <strong>Time Complexity:</strong>
+                    <ul>
+                        <li>Best / Avg: O(log n)</li>
+                        <li>Worst: O(n) (jab tree skewed ho)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">BFS (Breadth-First Search) kya hai?</div>
+            <div class="answer">
+                <strong>"BFS ek graph/tree traversal technique hai jisme hum nodes ko level-by-level, breadth-wise visit
+                    karte hain."</strong>
+
+                <div class="points">
+                    <strong>Kaise kaam karta hai:</strong>
+                    <ul>
+                        <li>BFS queue use karta hai</li>
+                        <li>Pehle root ko queue me daalte hain</li>
+                        <li>Phir uske saare neighbours ko visit karte hain</li>
+                        <li>Phir unke neighbours — level by level</li>
+                    </ul>
+                </div>
+
+                <div class="points">
+                    <strong>Where BFS is used:</strong>
+                    <ul>
+                        <li>Shortest path find karne ke liye</li>
+                        <li>Social network suggestions</li>
+                        <li>Maps / GPS route</li>
+                        <li>Level-order traversal in trees</li>
+                    </ul>
+                </div>
+
+                <div class="example">
+                    Time Complexity: O(V + E) (vertices + edges)
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">DFS (Depth-First Search) kya hai?</div>
+            <div class="answer">
+                <strong>"DFS ek traversal technique hai jisme hum ek path ko maximum depth tak explore karte hain, phir
+                    backtrack karke next path follow karte hain."</strong>
+
+                <div class="points">
+                    <strong>Kaise kaam karta hai:</strong>
+                    <ul>
+                        <li>DFS stack use karta hai (ya recursion)</li>
+                        <li>Node visit karo</li>
+                        <li>Uske deepest child tak jao</li>
+                        <li>Jab aur aage nahi ja sakte, backtrack karo</li>
+                        <li>Next path follow karo</li>
+                    </ul>
+                </div>
+
+                <div class="points">
+                    <strong>Where DFS is used:</strong>
+                    <ul>
+                        <li>Cycle detection</li>
+                        <li>Backtracking (Sudoku, Maze)</li>
+                        <li>Topological sort</li>
+                        <li>Connected components find karne me</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Algorithm kya hai?</div>
+            <div class="answer">
+                <strong>"Algorithm ek step-by-step procedure hota hai jisse hum kisi problem ko logically solve karte
+                    hain."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Flowchart kya hai?</div>
+            <div class="answer">
+                <strong>"Flowchart ek diagram hota hai jo symbols aur arrows ki help se program ka step-by-step flow
+                    dikhata hai."</strong>
+            </div>
+        </div>
+
+        <div class="section-title">🎯 Advanced C++ Concepts</div>
+        <div class="section-title">🎯 Advanced C++ Concepts</div>
+
+        <div class="card">
+            <div class="question">const Keyword ka use</div>
+            <div class="answer">
+                <strong>"const variable ki value ko change hone nahi deta."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">typedef kya hai?</div>
+            <div class="answer">
+                <strong>"typedef kisi existing data type ko new naam dene ke liye use hota hai."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Macro kya hai?</div>
+            <div class="answer">
+                <strong>"Macro ek preprocessor directive hota hai jo code ko replace karta hai compile hone se
+                    pehle."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Header Guard kya hai?</div>
+            <div class="answer">
+                <strong>"Header guard file ko multiple times include hone se bachata hai."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Dynamic Memory Allocation kya hai?</div>
+            <div class="answer">
+                <strong>"Run-time par memory allocate karna dynamic memory allocation kehlata hai."</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Ambiguity Error kab aati hai?</div>
+            <div class="answer">
+                <strong>"Ambiguity error tab aati hai jab compiler ko ye samajh na aaye ki kaun sa function ya kaun sa
+                    meaning choose karna hai — yani multiple possible matches ho jaate hain."</strong>
+
+                <div class="points">
+                    <strong>Common Cases:</strong>
+                    <ul>
+                        <li><strong>Function overloading me:</strong> Jab do functions bilkul similar hon</li>
+                        <li><strong>Multiple inheritance me:</strong> Jab do parent classes me same named function ho
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="example">
+                    Example - Function Overloading:
+                    void fun(int);
+                    void fun(float);
+                    fun(5); // int bhi ho sakta hai, float bhi — ambiguity
+                </div>
+
+                <div class="example">
+                    Example - Multiple Inheritance:
+                    class A { void show(); }
+                    class B { void show(); }
+                    class C : public A, public B {};
+                    C obj;
+                    obj.show(); // A ka? B ka? → ambiguity
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Virtual Method se Ambiguity kaise solve karein?</div>
+            <div class="answer">
+                <strong>"Jab multiple inheritance me same function do parent classes me ho, to unhe virtual bana dene se
+                    compiler ko pata chal jata hai ki actual function ka base version ek hi hai — aur ambiguity khatam
+                    ho jaati hai."</strong>
+
+                <div class="tip">
+                    Virtual method ek shared function table banata hai, jisse multiple inheritance me function call
+                    clear hota hai aur ambiguity error nahi aati.
+                </div>
+
+                <code>#include &lt;iostream&gt;
+using namespace std;
+
+class A {
+public:
+    virtual void show() {
+        cout &lt;&lt; "A ki show()" &lt;&lt; endl;
+    }
+};
+
+class B : public A {
+public:
+    void show() override {
+        cout &lt;&lt; "B ki show()" &lt;&lt; endl;
+    }
+};
+
+class C : public B {};
+
+int main() {
+    C obj;
+    obj.show();  // No ambiguity
+    return 0;
+}</code>
+            </div>
+        </div>
+
+        <div class="section-title">💻 Miscellaneous</div>
+
+        <div class="card">
+            <div class="question">GitHub kya hai?</div>
+            <div class="answer">
+                <strong>"GitHub ek online platform hai jaha hum apna code store, manage, aur share karte hain. Ye
+                    version control aur collaboration ke liye use hota hai."</strong>
+            </div>
+        </div>
+
+        <div class="section-title">📋 Quick Reference Tables</div>
+
+        <div class="card">
+            <div class="question">Operator Types Summary</div>
+            <div class="answer">
+                <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+                    <thead>
+                        <tr style="background: linear-gradient(135deg, #667eea, #764ba2); color: white;">
+                            <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Type</th>
+                            <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Description</th>
+                            <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Examples</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background: #f8f9ff;">
+                            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Unary</strong></td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">Ek operand par operation</td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">++, --, !</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Binary</strong></td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">Do operands ke beech</td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">+, -, *, /, %</td>
+                        </tr>
+                        <tr style="background: #f8f9ff;">
+                            <td style="padding: 10px; border: 1px solid #ddd;"><strong>Ternary</strong></td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">Teen operands ke saath</td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">? :</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Loop Types Comparison</div>
+            <div class="answer">
+                <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+                    <thead>
+                        <tr style="background: linear-gradient(135deg, #667eea, #764ba2); color: white;">
+                            <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Loop Type</th>
+                            <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Condition Check</th>
+                            <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Minimum Execution</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background: #f8f9ff;">
+                            <td style="padding: 10px; border: 1px solid #ddd;"><strong>while</strong></td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">Pehle condition check</td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">0 times</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><strong>do-while</strong></td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">Baad me condition check</td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">1 time (guaranteed)</td>
+                        </tr>
+                        <tr style="background: #f8f9ff;">
+                            <td style="padding: 10px; border: 1px solid #ddd;"><strong>for</strong></td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">Pehle condition check</td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">0 times</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">Escape Sequences Quick Reference</div>
+            <div class="answer">
+                <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+                    <thead>
+                        <tr style="background: linear-gradient(135deg, #667eea, #764ba2); color: white;">
+                            <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Escape Sequence</th>
+                            <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Meaning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background: #f8f9ff;">
+                            <td style="padding: 10px; border: 1px solid #ddd;"><strong>\n</strong></td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">New line</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><strong>\t</strong></td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">Tab space</td>
+                        </tr>
+                        <tr style="background: #f8f9ff;">
+                            <td style="padding: 10px; border: 1px solid #ddd;"><strong>\"</strong></td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">Double quote</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><strong>\'</strong></td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">Single quote</td>
+                        </tr>
+                        <tr style="background: #f8f9ff;">
+                            <td style="padding: 10px; border: 1px solid #ddd;"><strong>\\</strong></td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">Backslash</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><strong>\0</strong></td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">Null character</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="section-title">✨ Pro Tips for Viva</div>
+
+        <div class="card" style="background: linear-gradient(135deg, #e8f5e9, #c8e6c9);">
+            <div class="answer">
+                <h3 style="color: #2e7d32; margin-bottom: 15px;">🎯 Viva Success Mantras</h3>
+                <div class="points">
+                    <ul style="line-height: 2;">
+                        <li>✅ <strong>Confidence se bolo</strong> — stammering nahi, clear voice me</li>
+                        <li>✅ <strong>Short & precise answers</strong> — bahut lamba mat khicho</li>
+                        <li>✅ <strong>Technical terms use karo</strong> — contiguous memory, O(1), etc.</li>
+                        <li>✅ <strong>Example ready rakho</strong> — har concept ka ek simple example</li>
+                        <li>✅ <strong>"Sir" bolna mat bhoolo</strong> — respect dikhao</li>
+                        <li>✅ <strong>Agar nahi aata, honestly bolo</strong> — "Sir, is concept par main thoda aur
+                            padhunga"</li>
+                        <li>✅ <strong>Basics strong rakho</strong> — Array, Loop, Function sabse zyada puchte hain</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="background: linear-gradient(135deg, #fff3e0, #ffe0b2);">
+            <div class="answer">
+                <h3 style="color: #e65100; margin-bottom: 15px;">⚡ Last Minute Revision Checklist</h3>
+                <div class="points">
+                    <ul style="line-height: 2;">
+                        <li>☑️ Array definition + 4 key points</li>
+                        <li>☑️ C vs C++ main differences</li>
+                        <li>☑️ Compiler vs Interpreter</li>
+                        <li>☑️ Operator types (Unary, Binary, Ternary)</li>
+                        <li>☑️ While vs Do-While difference</li>
+                        <li>☑️ break vs continue</li>
+                        <li>☑️ Call by value vs call by reference</li>
+                        <li>☑️ Structure vs Union</li>
+                        <li>☑️ BFS vs DFS</li>
+                        <li>☑️ Recursion definition</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div
+            style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 30px; border-radius: 15px; text-align: center; margin-top: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+            <h2 style="margin-bottom: 15px; font-size: 2em;">🎓 All The Best! 🚀</h2>
+            <p style="font-size: 1.2em; line-height: 1.8;">
+                Ye saare questions cover kar liye to viva me koi nahi rok sakta!<br>
+                <strong>Confidence rakho, clear bolo, aur rockstar ban jao! 💪</strong>
+            </p>
+            <p style="margin-top: 20px; opacity: 0.9;">
+                💡 Remember: Examiner tumhari knowledge nahi, tumhara confidence aur clarity dekhta hai!
+            </p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; padding: 20px; color: white; opacity: 0.8;">
+            <p>Created with ❤️ for Viva Success</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">All answers in perfect Hinglish — Easy to remember, Easy to
+                speak!</p>
+        </div>
+    </div>
+</body>
+
+</html>
