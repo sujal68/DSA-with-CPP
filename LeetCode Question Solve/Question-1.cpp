@@ -1,42 +1,26 @@
 #include <iostream>
+#include <unordered_map>
 using namespace std;
 
+int findIndexOfSumOfTwoNum(int array[], int target)
+{
+   unordered_map<int, int> order;
+   for (int i = 0; i < 4; i++)
+   {
+      int currentNum = array[i];
+      int need = target - currentNum;
+
+      if (order.find(need) != order.end())
+      {
+         cout << order[need] << " " << i << endl;
+         return 1;
+      }
+      order[currentNum] = i;
+   }
+}
 int main()
 {
-    int size;
-    cout << "Enter Array Of Index Size : ";
-    cin >> size;
-    int arr[size];
-
-    for (int i = 0; i < size; i++)
-    {
-        cout << "Enter Array Element of [" << i << "] : ";
-        cin >> arr[i];
-    }
-
-    int target;
-    cout << "Enter Target: ";
-    cin >> target;
-
-    bool found = false;
-
-    for (int i = 0; i < size; i++)
-    {
-        for (int j = i + 1; j < size; j++)
-        {
-            if (arr[i] + arr[j] == target)
-            {
-                cout << "Your target Are Found " << arr[i] << " + " << arr[j] << " = " << target << endl;
-                cout << "Your Targeted Sum Index : [" << i << "] , [" << j << "]" << endl;
-                found = true;
-            }
-        }
-    }
-
-    if (!found)
-    {
-        cout << endl
-             << "Your Target Are Not Found... Please try Again..." << endl;
-    }
-    return 0;
+   int array[4] = {2, 7, 11, 15};
+   int target = 9;
+   findIndexOfSumOfTwoNum(array, target);
 }
